@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-12-22T06:08:24.171Z</updated>
+  <updated>2014-12-26T02:25:46.036Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,455 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[响应式布局]]></title>
+    <link href="http://yoursite.com/2014/12/25/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/"/>
+    <id>http://yoursite.com/2014/12/25/响应式布局/</id>
+    <published>2014-12-25T12:07:52.000Z</published>
+    <updated>2014-12-25T12:17:16.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="实现响应式布局的方式">实现响应式布局的方式</h3>
+<ul>
+<li>css3-Media Query （最简单）</li>
+<li>借助原生javascript （代码量）</li>
+<li>第三方控制框架</li>
+</ul>
+<p>外联样式表<br>内嵌样式表</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="实现响应式布局的方式">实现响应式布局的方式</h3>
+<ul>
+<li>css3-Media Query （最简单）</li>
+<li>借助原生javascript （代码量）</li>
+<li>第三方控制框架</li>
+</ul>
+<p>外联样式表<br>内嵌]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[webim]]></title>
+    <link href="http://yoursite.com/2014/12/25/webim/"/>
+    <id>http://yoursite.com/2014/12/25/webim/</id>
+    <published>2014-12-25T07:21:51.000Z</published>
+    <updated>2014-12-25T07:43:57.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="webim_总结">webim 总结</h3>
+<p>从接手webim到现在，已经两年多，webim作为全微博最重要的通讯产品从起先v4版本的，历经v5的蜕变，v6的升华走到现在这个成熟稳定的状态。</p>
+<p>webim 从简单无层次划分的架构，到v6版本的观察者模式，再到集合打包，压缩，测试，布置环境等一系列自动流水化操作。webim强大，成熟，稳定。</p>
+<p>下面我将会从思想理念，技术架构，未来展望等四个方面记录在webim工作这几年的点点滴滴</p>
+<h3 id="思想">思想</h3>
+<h4 id="为什么要做webim">为什么要做webim</h4>
+<h4 id="如何看待即时通讯在各大网站上得应用">如何看待即时通讯在各大网站上得应用</h4>
+<h4 id="怎么做webim">怎么做webim</h4>
+<h4 id="webim_存亡">webim 存亡</h4>
+<h3 id="技术架构">技术架构</h3>
+<h4 id="webim_从启动、服务器连接，到UI_展示，更新的过程">webim 从启动、服务器连接，到UI 展示，更新的过程</h4>
+<h4 id="组件的依赖关系">组件的依赖关系</h4>
+<h4 id="事件交互模型">事件交互模型</h4>
+<h4 id="控件的标准化">控件的标准化</h4>
+<h4 id="风险控制(测试)">风险控制(测试)</h4>
+<h4 id="故障处理策略">故障处理策略</h4>
+<h4 id="远端代码调试">远端代码调试</h4>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="webim_总结">webim 总结</h3>
+<p>从接手webim到现在，已经两年多，webim作为全微博最重要的通讯产品从起先v4版本的，历经v5的蜕变，v6的升华走到现在这个成熟稳定的状态。</p>
+<p>webim 从简单无层次划分的架构，到v6版本的观]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="http://yoursite.com/2014/12/25/html%205/"/>
+    <id>http://yoursite.com/2014/12/25/html 5/</id>
+    <published>2014-12-24T16:29:14.000Z</published>
+    <updated>2014-12-24T16:29:14.000Z</updated>
+    <content type="html"><![CDATA[<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>HTML 5 example</title>
+    <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+    <base href="http://localhost/" target="_blank">
+    <script defer src="" onload="alert(a)"></script>
+    <script async src="" onload="alert(b)"></script>
+</head>
+<body>
+
+
+<a media="handheld" href="#">aaa</a>
+<a media="tv" href="#">bbb</a>
+<a media="http://www.mukewang.com" hreflang="zh" ref="external">ccc</a>
+<h3>scope</h3>
+<div>
+    <style type="text/css" scoped="scoped">
+        h3{color : red;}
+        p {color: blue;}
+    </style>
+    <h3>Hello world</h3>
+    <p>text</p>
+</div>
+<h3>有序列表</h3>
+<ol start="12" reversed>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+
+</ol>
+<h3>Mark</h3>
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+<h3>progress</h3>
+<progress max="100" value="85">
+    <span>85</span>%
+
+</progress>
+
+
+<h3>time</h3>
+<p>
+    发布日期<time datetime="2013-10-18T09:00">9:00</time>
+    更新日期<time datetime="2013-10-120T09:00" pubdate="">9:00</time>
+
+</p>
+<h3>wbr</h3>
+<p>学习AJAX 熟悉XMLLLLLLLLLLLLLLL<wbr>  http Request 对象。</p>
+<h3>canvas</h3>
+<canvas id="myCanvas"></canvas>
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#334455';
+    ctx.fillRect(0,0,80,100);
+
+</script>
+
+<h3>command</h3>
+<menu>
+    <command onclick="alert('Hello world')" label="click">Click Me!
+</menu>
+
+<h3>Detail</h3>
+<details>
+    <summary>
+        MacBook Pro specification
+    </summary>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</details>
+<h3>detailist</h3>
+<form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+    <input id="myCar" list="cars">
+    <datalist id="cars">
+        <option value="BMW"></option>
+        <option value="frod"></option>
+        <option value="volvo"></option>
+        <option value="911"></option>
+
+    </datalist>
+</form>
+<h3>keygen</h3>
+<form action="demo_keygen" method="get">
+    UserName :
+    <label>
+        <input type="text">
+
+    </label>
+    Enceyption :
+    <keygen name="security">
+    <input type="submit">
+</form>
+
+<h3>outPut</h3>
+<form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+    0 <input type="range" id="a" value="50">
+    100 +
+    <input type="number" id="b" value="50">
+
+    <output name="x" for="a b">139</output>
+
+</form>
+<h3>menu</h3>
+
+</body>
+</html>]]></content>
+    <summary type="html">
+    <![CDATA[<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[HTML5 总结]]></title>
+    <link href="http://yoursite.com/2014/12/24/HTML5-%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2014/12/24/HTML5-总结/</id>
+    <published>2014-12-24T09:26:18.000Z</published>
+    <updated>2014-12-26T02:24:33.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="标签">标签</h1>
+<h3 id="可以进行省略的标签">可以进行省略的标签</h3>
+<h4 id="1-_不允许写的结束符标签">1. 不允许写的结束符标签</h4>
+<p>area, basebr, col, command, embed, hr, img, input, keygen, link, meta, param, source, track, wbr</p>
+<h4 id="2-可以省略结束符的标签">2.可以省略结束符的标签</h4>
+<p>li, dt, dd, p, rt, optgroup, option, colgroup, thread, tbody, tr, td, th</p>
+<h4 id="3-可以完全省略的标签">3.可以完全省略的标签</h4>
+<p>html, head, body, colgroup, tbody</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"zh-CN"</span>&gt;</span></div><div class="line">  ...</div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<h3 id="新增的结构标签">新增的结构标签</h3>
+<h4 id="结构标签">结构标签</h4>
+<ul>
+<li>section 标签<br>表示页面中的一个内容区块，比如章节，页眉，页脚或页面的其他部分。可以用h1,h2,… 结合起来使用，表示文档结构。<br>html5中<section></section> HTML4 中<div></div></li>
+<li><p>article 标签<br>表示页面中一块与上下文不相关的独立内容，比如一篇文章</p>
+</li>
+<li><p>aside 标签<br>表示article标签内容之外的，与article 标签内容相关的辅助信息</p>
+</li>
+<li><p>header 标签<br>表示页面中一个内容区块或整个页面的标题</p>
+</li>
+<li><p>hgroup 标签</p>
+</li>
+</ul>
+<p>表示对整个页面或者页面中的一个内容区块的标题进行组合</p>
+<ul>
+<li>footer 标签</li>
+</ul>
+<p>表示整个页面或一根荣区块的注脚。一般来说，他会包含作者的姓名，创造日期以及创作者的联系信息</p>
+<ul>
+<li>nav 标签<br>表示页面中导航连接的部分</li>
+<li>figure标签<br>表示一段独立的流内容，一般表示文档主题流中得独立单元</li>
+</ul>
+<h4 id="表单标签">表单标签</h4>
+<h4 id="媒体标签">媒体标签</h4>
+<ul>
+<li>video 标签</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">video</span> <span class="attribute">src</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">video</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<ul>
+<li>audio 标签</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">audio</span> <span class="attribute">src</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">audio</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<ul>
+<li>embed 标签</li>
+</ul>
+<h4 id="其他功能标签">其他功能标签</h4>
+<h3 id="废除的标签">废除的标签</h3>
+<h4 id="可以用css_表示的代替的标签">可以用css 表示的代替的标签</h4>
+<h4 id="不再使用frame">不再使用frame</h4>
+<h4 id="只有个别浏览器支持的标签">只有个别浏览器支持的标签</h4>
+<h4 id="其他不常用的标签">其他不常用的标签</h4>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="标签">标签</h1>
+<h3 id="可以进行省略的标签">可以进行省略的标签</h3>
+<h4 id="1-_不允许写的结束符标签">1. 不允许写的结束符标签</h4>
+<p>area, basebr, col, command, embed, hr, im]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[centerOS VPS上 搭建VPN]]></title>
+    <link href="http://yoursite.com/2014/12/24/centerOS-VPS%E4%B8%8A-%E6%90%AD%E5%BB%BAVPN/"/>
+    <id>http://yoursite.com/2014/12/24/centerOS-VPS上-搭建VPN/</id>
+    <published>2014-12-24T03:52:59.000Z</published>
+    <updated>2014-12-24T09:19:04.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="1-准备工作">1.准备工作</h3>
+<ul>
+<li>删除 pptpd ppp</li>
+<li>清除 配置文件</li>
+</ul>
+<h4 id="命令行如下">命令行如下</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">yum <span class="built_in">remove</span> -<span class="keyword">y</span> pptpd ppp</div><div class="line">/etc/init.<span class="keyword">d</span>/iptables <span class="keyword">stop</span></div><div class="line">rm -rf /etc/pptpd.<span class="keyword">conf</span></div><div class="line">rm -rf /etc/ppp</div></pre></td></tr></table></figure>
+
+<h3 id="2-安装_pptpd">2.安装 pptpd</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum <span class="operator"><span class="keyword">install</span> ppp iptables</span></div></pre></td></tr></table></figure>
+
+<h3 id="3-安装_pptpd_加入_yum_源">3.安装 pptpd 加入 yum 源</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rpm -Uvh http://poptop.sourceforge.net/yum/stable/rhel6/pptp-<span class="operator"><span class="keyword">release</span>-<span class="keyword">current</span>.noarch.rpm</span></div><div class="line">yum <span class="keyword">install</span> pptpd</div></pre></td></tr></table></figure>
+
+<h3 id="4-开启路由转发">4.开启路由转发</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">vi</span> /etc/sysctl.<span class="keyword">conf</span></div></pre></td></tr></table></figure>
+
+<h4 id="(1)修改">(1)修改</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">&gt; net.ipv4.ip_forward </span>=<span class="string"> 1</span></div></pre></td></tr></table></figure>
+
+<h4 id="(2)执行">(2)执行</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">/sbin/</span>sysctl -p</div></pre></td></tr></table></figure>
+
+<h3 id="5-配置">5.配置</h3>
+<h4 id="(1)修改_/etc/ppp/options-pptpd">(1)修改 /etc/ppp/options.pptpd</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="title">vi</span> /etc/ppp/options.pptpd</div><div class="line">ms-dns <span class="number">4.2.2.1</span></div><div class="line">ms-dns <span class="number">4.2.2.2</span></div></pre></td></tr></table></figure>
+
+<h4 id="(2)修改_/etc/pptpd-conf">(2)修改 /etc/pptpd.conf</h4>
+<pre><code><span class="title">localip</span> <span class="number">10.8.8.1</span>
+remoteip <span class="number">10.8.8.2</span>-<span class="number">245</span>
+</code></pre><h4 id="(3)开机启动、运行">(3)开机启动、运行</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">chkconfig pptpd <span class="command"><span class="keyword">on</span></span></div><div class="line">service pptpd start</div></pre></td></tr></table></figure>
+
+<h4 id="(4)添加vpn_账号密码">(4)添加vpn 账号密码</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="operator">-e</span> <span class="string">'vpntest * vpntestpassword *'</span> &gt;&gt; /etc/ppp/chap-secrets</div><div class="line"><span class="built_in">echo</span> <span class="operator">-e</span> <span class="string">'vpn * 123456 *'</span> &gt;&gt; /etc/ppp/chap-secrets</div></pre></td></tr></table></figure>
+
+<h4 id="(5)开启端口">(5)开启端口</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">/sbin/i</span>ptables -A INPUT -p tcp --dport <span class="number">1723</span> -j ACCEPT</div><div class="line"><span class="regexp">/sbin/i</span>ptables -A INPUT -p tcp --dport <span class="number">47</span> -j ACCEPT</div><div class="line"><span class="regexp">/sbin/i</span>ptables -A INPUT -p gre -j ACCEPT</div></pre></td></tr></table></figure>
+
+<h4 id="(6)允许外网vpn链接">(6)允许外网vpn链接</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">iptables</span> -A POSTROUTING -t nat -s <span class="number">10.8.8.0</span>/<span class="number">24</span> -o eth0 -j MASQUERADE</div></pre></td></tr></table></figure>
+
+<h4 id="(7)_保存，执行">(7) 保存，执行</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">service</span> <span class="title">iptables</span> save</span></div><div class="line">service iptables start</div></pre></td></tr></table></figure>
+
+<h6 id="只允许规定数据包转发-即只允许内网规定的IP上网…">只允许规定数据包转发..即只允许内网规定的IP上网…</h6>
+<h3 id="6-_问题">6. 问题</h3>
+<p>VPN 已经链接上但是没有数据包的发送跟接受</p>
+<figure class="highlight `"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="title">iptables</span> -A POSTROUTING -t nat -s <span class="number">10.8.8.0</span>/<span class="number">24</span> -o eth0 -j MASQUERADE</div><div class="line">service iptables save</div></pre></td></tr></table></figure>
+
+<h4 id="注意在修改了iptables后_需要save">注意在修改了iptables后 需要save</h4>
+<h4 id="10-8-8-0_要与_localip（10-8-8-1）相一致">10.8.8.0 要与 localip（10.8.8.1）相一致</h4>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="1-准备工作">1.准备工作</h3>
+<ul>
+<li>删除 pptpd ppp</li>
+<li>清除 配置文件</li>
+</ul>
+<h4 id="命令行如下">命令行如下</h4>
+<figure class="highlight"><table><tr]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[centerOS 中yum命令的使用总结]]></title>
+    <link href="http://yoursite.com/2014/12/24/centerOS-%E4%B8%ADyum%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2014/12/24/centerOS-中yum命令的使用总结/</id>
+    <published>2014-12-24T03:24:37.000Z</published>
+    <updated>2014-12-25T07:28:40.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="yum_参数">yum 参数</h3>
+<ul>
+<li>-y 自动选择y，全自动 ,不带y 手动选择</li>
+</ul>
+<h3 id="yum_命令">yum 命令</h3>
+<ul>
+<li><p>yum update</p>
+</li>
+<li><p>yum install</p>
+</li>
+<li><p>yum remove</p>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="yum_参数">yum 参数</h3>
+<ul>
+<li>-y 自动选择y，全自动 ,不带y 手动选择</li>
+</ul>
+<h3 id="yum_命令">yum 命令</h3>
+<ul>
+<li><p>yum update</p>
+</li>
+<li><p>y]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[I can]]></title>
+    <link href="http://yoursite.com/2014/12/24/I%20Can/"/>
+    <id>http://yoursite.com/2014/12/24/I Can/</id>
+    <published>2014-12-23T16:07:07.000Z</published>
+    <updated>2014-12-23T16:35:18.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="技能表">技能表</h3>
+<ul>
+<li><p>HTML5  CSS3<br>  熟练掌握基础<br>  需要做出一个Demo 页面<br>  在手机上展示的页面<br>  HTML5解决方案</p>
+</li>
+<li><p>设计模式<br>  设计模式在webim 上的应用<br>  webim 的架构图</p>
+</li>
+<li><p>面向对象编程</p>
+</li>
+<li>浏览器差异</li>
+<li>AJAX 具体</li>
+<li><p>NodeJS</p>
+</li>
+<li><p>框架<br>  web 前端框架</p>
+</li>
+<li><p>性能<br>  web 标准化<br>  性能优化的方法<br>  可用性<br>  可访问性<br>  兼容性</p>
+</li>
+</ul>
+<ul>
+<li>自我认知方面<br>  自我的管理能力<br>  健康的创业心态<br>  快速的学习能力<br>  乐于分享沟通</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="技能表">技能表</h3>
+<ul>
+<li><p>HTML5  CSS3<br>  熟练掌握基础<br>  需要做出一个Demo 页面<br>  在手机上展示的页面<br>  HTML5解决方案</p>
+</li>
+<li><p>设计模式<br>  设计模式在w]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[FileReader]]></title>
+    <link href="http://yoursite.com/2014/12/22/FileReader/"/>
+    <id>http://yoursite.com/2014/12/22/FileReader/</id>
+    <published>2014-12-22T11:44:58.000Z</published>
+    <updated>2014-12-22T11:54:36.000Z</updated>
+    <content type="html"><![CDATA[<p>FileReader 功能是从文件中读取数据，保存到js变量中，</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>FileReader 功能是从文件中读取数据，保存到js变量中，</p>
+]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Blob]]></title>
+    <link href="http://yoursite.com/2014/12/22/Blob/"/>
+    <id>http://yoursite.com/2014/12/22/Blob/</id>
+    <published>2014-12-22T10:40:20.000Z</published>
+    <updated>2014-12-22T11:39:12.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="概述">概述</h2>
+<p>一个Blob 对象代表一个类似文件的不可变对象，包含原始数据。Blobs代表的数据不一定是javascript 的原生格式数据。文件接口是基于Blob之上的，<br>继承了blob 的方法并且扩展到支持用户的系统文件 。</p>
+<p>构建一个Blob 的简单方法是通过调用Blob() 的构造函数。另外一个方法是使用slice() 方法创建一个包含Blob 数据子集的Blob 数据</p>
+<h2 id="构造方法">构造方法</h2>
+<p>Blob() 返回一个新建的Blob对象。</p>
+<h2 id="属性">属性</h2>
+<p>Blob.size <code>readonly</code><br>   bytes 参数单位是bytes</p>
+<p>Blob.type <code>readonly</code><br>   返回blob 的数据类型。如果类型未知，返回一个空字符串</p>
+<h2 id="方法">方法</h2>
+<p>Blob.slice<br>    返回一个包含了从原对象指定返回字节的新的Blob 对象。</p>
+<h2 id="示例">示例</h2>
+<h4 id="one_创建一个Blob_对象">one 创建一个Blob 对象</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> aFileParts = ['&lt;a id=<span class="string">"a"</span>&gt;&lt;b id=<span class="string">"b"</span>&gt;hey!&lt;/b&gt;&lt;/a&gt;'];</div><div class="line"><span class="keyword">var</span> oMyBlob = <span class="keyword">new</span> Blob(aFileParts, {<span class="keyword">type</span> : <span class="symbol">'text</span>/html'}); <span class="comment">// the blob</span></div><div class="line"><span class="comment">//Blob {type: "text/html", size: 32, slice: function}size: 32type: "text/html"__proto__: Blob}</span></div></pre></td></tr></table></figure>
+
+<h4 id="two_返回一个url">two 返回一个url</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//var typedArray = GetTheTypedArraySomehow();</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> typedArray = <span class="symbol">'123456789</span>0';</div><div class="line"><span class="keyword">var</span> blob = <span class="keyword">new</span> Blob([typedArray], {<span class="keyword">type</span>: <span class="symbol">'application</span>/octet-binary'}); <span class="comment">// pass a useful mime type here</span></div><div class="line"><span class="keyword">var</span> url = URL.createObjectURL(blob);</div><div class="line"><span class="comment">// url will be something like: blob:d3958f5c-0777-0845-9dcf-2cb28783acaf</span></div><div class="line"><span class="comment">// now you can use the url in any context that regular URLs can be used in, for example img.src, etc.</span></div></pre></td></tr></table></figure>
+
+<h4 id="从Blob读取数据">从Blob读取数据</h4>
+<p>唯一的方法是使用 FileReader</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> reader = new <span class="type">FileReader</span>();</div><div class="line">reader.addEventListener(<span class="string">"loadend"</span>, function(data) {</div><div class="line">    console.log('data',data);</div><div class="line">    // 返回的数据是 <span class="number">10</span></div><div class="line">   // reader.<span class="literal">result</span> contains the contents <span class="keyword">of</span> blob <span class="keyword">as</span> a typed <span class="type">array</span></div><div class="line">});</div><div class="line">reader.readAsArrayBuffer(blob);</div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="概述">概述</h2>
+<p>一个Blob 对象代表一个类似文件的不可变对象，包含原始数据。Blobs代表的数据不一定是javascript 的原生格式数据。文件接口是基于Blob之上的，<br>继承了blob 的方法并且扩展到支持用户的系统文件 。</p>
+<p]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
@@ -123,10 +572,12 @@
     <link href="http://yoursite.com/2014/12/21/%E9%97%AD%E5%8C%85/"/>
     <id>http://yoursite.com/2014/12/21/闭包/</id>
     <published>2014-12-21T06:21:03.000Z</published>
-    <updated>2014-12-21T09:13:01.000Z</updated>
+    <updated>2014-12-22T08:13:20.000Z</updated>
     <content type="html"><![CDATA[<p>如何向一个小孩子介绍闭包呢</p>
 <p>以上是摘要<br><a id="more"></a><br>以下是余下全文</p>
 <p>如何向一个小孩子介绍闭包呢<br>如何向一个小孩子介绍闭包呢</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div <span class="variable">id=</span><span class="string">"canvas-container"</span> <span class="variable">align=</span><span class="string">"center"</span>&gt;</div><div class="line"> &lt;canvas <span class="variable">id=</span><span class="string">"canvas"</span> <span class="variable">width=</span><span class="string">"800px"</span> <span class="variable">height=</span><span class="string">"600px"</span>&gt;&lt;/canvas&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+
 ]]></content>
     <summary type="html">
     <![CDATA[<p>如何向一个小孩子介绍闭包呢</p>
