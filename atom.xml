@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-12-26T02:25:46.036Z</updated>
+  <updated>2014-12-26T04:40:59.576Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -68,135 +68,6 @@
     <![CDATA[<h3 id="webim_总结">webim 总结</h3>
 <p>从接手webim到现在，已经两年多，webim作为全微博最重要的通讯产品从起先v4版本的，历经v5的蜕变，v6的升华走到现在这个成熟稳定的状态。</p>
 <p>webim 从简单无层次划分的架构，到v6版本的观]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[]]></title>
-    <link href="http://yoursite.com/2014/12/25/html%205/"/>
-    <id>http://yoursite.com/2014/12/25/html 5/</id>
-    <published>2014-12-24T16:29:14.000Z</published>
-    <updated>2014-12-24T16:29:14.000Z</updated>
-    <content type="html"><![CDATA[<!DOCTYPE html>
-<html manifest="cache.manifest">
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="pragma" content="no-cache">
-    <title>HTML 5 example</title>
-    <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
-    <base href="http://localhost/" target="_blank">
-    <script defer src="" onload="alert(a)"></script>
-    <script async src="" onload="alert(b)"></script>
-</head>
-<body>
-
-
-<a media="handheld" href="#">aaa</a>
-<a media="tv" href="#">bbb</a>
-<a media="http://www.mukewang.com" hreflang="zh" ref="external">ccc</a>
-<h3>scope</h3>
-<div>
-    <style type="text/css" scoped="scoped">
-        h3{color : red;}
-        p {color: blue;}
-    </style>
-    <h3>Hello world</h3>
-    <p>text</p>
-</div>
-<h3>有序列表</h3>
-<ol start="12" reversed>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-
-</ol>
-<h3>Mark</h3>
-<p>Do not forget to buy <mark>milk</mark> today.</p>
-<h3>progress</h3>
-<progress max="100" value="85">
-    <span>85</span>%
-
-</progress>
-
-
-<h3>time</h3>
-<p>
-    发布日期<time datetime="2013-10-18T09:00">9:00</time>
-    更新日期<time datetime="2013-10-120T09:00" pubdate="">9:00</time>
-
-</p>
-<h3>wbr</h3>
-<p>学习AJAX 熟悉XMLLLLLLLLLLLLLLL<wbr>  http Request 对象。</p>
-<h3>canvas</h3>
-<canvas id="myCanvas"></canvas>
-<script>
-    var canvas = document.getElementById('myCanvas');
-    var ctx = canvas.getContext('2d');
-    ctx.fillStyle = '#334455';
-    ctx.fillRect(0,0,80,100);
-
-</script>
-
-<h3>command</h3>
-<menu>
-    <command onclick="alert('Hello world')" label="click">Click Me!
-</menu>
-
-<h3>Detail</h3>
-<details>
-    <summary>
-        MacBook Pro specification
-    </summary>
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-    </ul>
-</details>
-<h3>detailist</h3>
-<form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
-    <input id="myCar" list="cars">
-    <datalist id="cars">
-        <option value="BMW"></option>
-        <option value="frod"></option>
-        <option value="volvo"></option>
-        <option value="911"></option>
-
-    </datalist>
-</form>
-<h3>keygen</h3>
-<form action="demo_keygen" method="get">
-    UserName :
-    <label>
-        <input type="text">
-
-    </label>
-    Enceyption :
-    <keygen name="security">
-    <input type="submit">
-</form>
-
-<h3>outPut</h3>
-<form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
-    0 <input type="range" id="a" value="50">
-    100 +
-    <input type="number" id="b" value="50">
-
-    <output name="x" for="a b">139</output>
-
-</form>
-<h3>menu</h3>
-
-</body>
-</html>]]></content>
-    <summary type="html">
-    <![CDATA[<!DOCTYPE html>
-<html manifest="cache.manifest">
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="pragma" content="no-cache]]>
     </summary>
     
   </entry>
