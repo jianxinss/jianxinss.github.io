@@ -1,23 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Hexo]]></title>
+  <title><![CDATA[jianxin blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2014-12-26T04:40:59.576Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://localhost:4000/"/>
+  <updated>2015-01-08T13:07:53.139Z</updated>
+  <id>http://localhost:4000/</id>
   
   <author>
-    <name><![CDATA[John Doe]]></name>
-    
+    <name><![CDATA[zhaojianxin]]></name>
+    <email><![CDATA[jianxinss@gmail.com]]></email>
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[DOM ready 事件概述]]></title>
+    <link href="http://localhost:4000/2015/01/08/DOM-ready-%E4%BA%8B%E4%BB%B6%E6%A6%82%E8%BF%B0/"/>
+    <id>http://localhost:4000/2015/01/08/DOM-ready-事件概述/</id>
+    <published>2015-01-08T03:30:22.000Z</published>
+    <updated>2015-01-08T11:57:55.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="DOM_ready_事件概述">DOM ready 事件概述</h3>
+<p>window 本身有一个window.onload事件，它是在页面所有资源都加载完成之后才触发，而当页面图片等大量资源需要加载时就会导致相应缓慢。window.onload 事件也就迟迟没法触发。<br>所以出现了DOM Ready 事件，这个事件在DOM文档结构准备完毕后，资源加载完成前触发。<br>因为有时候，我们需要在DOM 准备完毕后在修改DOM，如果DOM没有完成就会出现错误。</p>
+<h3 id="DOM_ready_现状">DOM ready 现状</h3>
+<ul>
+<li><p>目前DOMContenLoaded 事件在需要webkit 浏览器以及IE9上都可以使用，此事件会在DOM 文档准备好以后触发，包含在HTML5 标准中，对于支持此事件的浏览器可以直接使用。</p>
+</li>
+<li><p>目前IE6，7，8 都不支持DOMContentLoaded 事件，所以目前做的主要工作是兼容IE6，7，8 使其兼容DOM ready事件。</p>
+</li>
+</ul>
+<h3 id="对于IE6，7，8_的hack_方法">对于IE6，7，8  的hack 方法</h3>
+<h4 id="1-setTimeout_检测">1.setTimeout 检测</h4>
+<h4 id="2-监听readystatechange事件，判断readyState_状态是否为Complete，interactive_等触发">2.监听readystatechange事件，判断readyState 状态是否为Complete，interactive 等触发</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.onreadystatechange = <span class="function"><span class="keyword">function</span><span class="params">(e)</span></span>{</div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">document</span>.readyState);</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<h4 id="3-通过设置了script块的defer_属性实现">3.通过设置了script块的defer 属性实现</h4>
+<h4 id="4-内部script：外部script_的改进版本。外部script_需要额外的js_文件，内部script_可以避免此问题">4.内部script：外部script 的改进版本。外部script 需要额外的js 文件，内部script 可以避免此问题</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.write(<span class="string">'&lt;script id=_ie_onload defer src=javascript: void(0)&gt;&lt;/script&gt;'</span>);</div><div class="line"><span class="keyword">var</span> script = <span class="built_in">document</span>.getElementById(<span class="string">'_ie_onload'</span>);</div><div class="line">script.onreadystatechange = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="keyword">if</span>(<span class="keyword">this</span>.readyState == <span class="string">'complete'</span>){</div><div class="line">        <span class="comment">//done</span></div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<h4 id="5-微软的文档指出doScroll必须在DOM_主文档准备完毕之后才能正常触发，所以通过doScroll判断DOM_是否准备完毕">5.微软的文档指出doScroll必须在DOM 主文档准备完毕之后才能正常触发，所以通过doScroll判断DOM 是否准备完毕</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">IEContentLoaded</span><span class="params">(w,fn)</span></span>{</div><div class="line">    <span class="keyword">var</span> d = <span class="built_in">document</span>, done = <span class="literal">false</span>;</div><div class="line">    init = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="comment">// 初始化方法 执行一次</span></div><div class="line">        <span class="keyword">if</span>(!done){</div><div class="line">            done = <span class="literal">true</span>;</div><div class="line">            fn();</div><div class="line">        }</div><div class="line">    }</div><div class="line">}</div><div class="line"></div><div class="line">(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="keyword">try</span>{</div><div class="line">    d.documentElement.doScroll(<span class="string">'left'</span>);</div><div class="line">    }<span class="keyword">catch</span>(e){</div><div class="line">        setTimeout(<span class="built_in">arguments</span>.callee, <span class="number">50</span>);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line"></div><div class="line">    }</div><div class="line">    <span class="comment">// 没有错误才执行用户的回调方法。</span></div><div class="line">    init();</div><div class="line"></div><div class="line">},<span class="number">1000</span>);</div><div class="line"></div><div class="line"><span class="comment">//  如果用户是在DomReady之后才绑定的方法</span></div><div class="line"></div><div class="line">d.onreadystatechange = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="keyword">if</span>(d.readyState == <span class="string">'complete'</span>){</div><div class="line">        d.onreadstatechange = <span class="literal">null</span>;</div><div class="line">        init();</div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="DOM_ready_事件概述">DOM ready 事件概述</h3>
+<p>window 本身有一个window.onload事件，它是在页面所有资源都加载完成之后才触发，而当页面图片等大量资源需要加载时就会导致相应缓慢。window.onload 事件也就迟迟]]>
+    </summary>
+    
+      <category term="DOM" scheme="http://localhost:4000/tags/DOM/"/>
+    
+      <category term="Ready" scheme="http://localhost:4000/tags/Ready/"/>
+    
+      <category term="兼容性" scheme="http://localhost:4000/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[W3C Vs IE]]></title>
+    <link href="http://localhost:4000/2015/01/07/W3C-Vs-IE/"/>
+    <id>http://localhost:4000/2015/01/07/W3C-Vs-IE/</id>
+    <published>2015-01-07T12:46:36.000Z</published>
+    <updated>2015-01-08T02:27:49.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="前言">前言</h3>
+<p>W3C : <code>word wide web</code>万维网联盟，是web技术领域具权威和影响力的国际中立性技术标准机构。<br>W3C最主要的工作就是发展web 规范（recommendations）。这些规范描述了web 通信协议（比如HTML 和 XHTML ）和其他的构建模块</p>
+<p>目前对W3C 标准支持良好的浏览器，chrome，firefox，Opera 都很好，只有IE 最差，使用IE作为内核的浏览器（包括遨游，360安全浏览器等），<br>也对W3C部分标准不兼容</p>
+<h3 id="一、盒子模型">一、盒子模型</h3>
+<p>盒子模型包含content padding border margin<br>不同的是W3c 模型content 什么都不包含而IE盒子模型 包含了border 跟padding</p>
+<h5 id="W3C_标准盒子模型">W3C 标准盒子模型</h5>
+<p><img src="http://ww3.sinaimg.cn/mw690/62e9af2cjw1eo1dvh3zjlj20kq0cnadg.jpg" alt="W3C"></p>
+<h5 id="IE_盒子模型">IE 盒子模型</h5>
+<p><img src="http://ww2.sinaimg.cn/mw690/62e9af2cjw1eo1dvhaz4cj20lz0cugow.jpg" alt="IE"></p>
+<h3 id="二、事件流">二、事件流</h3>
+<p>W3C的事件流：从根节点（html）开始遍历所有的子节点，如果目标事件的父节点设置为捕获时触发，则执行该事件，直到目标被执行，然后再进行事件冒泡（设置为捕获时触发的事件将不再执行）</p>
+<p>IE 事件流：从目标事件被执行，然后再冒泡到父节点的事件，直到根文档</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="前言">前言</h3>
+<p>W3C : <code>word wide web</code>万维网联盟，是web技术领域具权威和影响力的国际中立性技术标准机构。<br>W3C最主要的工作就是发展web 规范（recommendations）。这些规范描述了web]]>
+    </summary>
+    
+      <category term="W3C标准" scheme="http://localhost:4000/tags/W3C%E6%A0%87%E5%87%86/"/>
+    
+      <category term="IE标准" scheme="http://localhost:4000/tags/IE%E6%A0%87%E5%87%86/"/>
+    
+      <category term="盒子模型" scheme="http://localhost:4000/tags/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
+    
+      <category term="W3C标准差异" scheme="http://localhost:4000/categories/W3C%E6%A0%87%E5%87%86%E5%B7%AE%E5%BC%82/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[响应式布局]]></title>
-    <link href="http://yoursite.com/2014/12/25/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/"/>
-    <id>http://yoursite.com/2014/12/25/响应式布局/</id>
+    <link href="http://localhost:4000/2014/12/25/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/"/>
+    <id>http://localhost:4000/2014/12/25/响应式布局/</id>
     <published>2014-12-25T12:07:52.000Z</published>
     <updated>2014-12-25T12:17:16.000Z</updated>
     <content type="html"><![CDATA[<h3 id="实现响应式布局的方式">实现响应式布局的方式</h3>
@@ -42,8 +117,8 @@
   
   <entry>
     <title><![CDATA[webim]]></title>
-    <link href="http://yoursite.com/2014/12/25/webim/"/>
-    <id>http://yoursite.com/2014/12/25/webim/</id>
+    <link href="http://localhost:4000/2014/12/25/webim/"/>
+    <id>http://localhost:4000/2014/12/25/webim/</id>
     <published>2014-12-25T07:21:51.000Z</published>
     <updated>2014-12-25T07:43:57.000Z</updated>
     <content type="html"><![CDATA[<h3 id="webim_总结">webim 总结</h3>
@@ -74,8 +149,8 @@
   
   <entry>
     <title><![CDATA[HTML5 总结]]></title>
-    <link href="http://yoursite.com/2014/12/24/HTML5-%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2014/12/24/HTML5-总结/</id>
+    <link href="http://localhost:4000/2014/12/24/HTML5-%E6%80%BB%E7%BB%93/"/>
+    <id>http://localhost:4000/2014/12/24/HTML5-总结/</id>
     <published>2014-12-24T09:26:18.000Z</published>
     <updated>2014-12-26T02:24:33.000Z</updated>
     <content type="html"><![CDATA[<h1 id="标签">标签</h1>
@@ -143,8 +218,8 @@
   
   <entry>
     <title><![CDATA[centerOS VPS上 搭建VPN]]></title>
-    <link href="http://yoursite.com/2014/12/24/centerOS-VPS%E4%B8%8A-%E6%90%AD%E5%BB%BAVPN/"/>
-    <id>http://yoursite.com/2014/12/24/centerOS-VPS上-搭建VPN/</id>
+    <link href="http://localhost:4000/2014/12/24/centerOS-VPS%E4%B8%8A-%E6%90%AD%E5%BB%BAVPN/"/>
+    <id>http://localhost:4000/2014/12/24/centerOS-VPS上-搭建VPN/</id>
     <published>2014-12-24T03:52:59.000Z</published>
     <updated>2014-12-24T09:19:04.000Z</updated>
     <content type="html"><![CDATA[<h3 id="1-准备工作">1.准备工作</h3>
@@ -214,8 +289,8 @@ remoteip <span class="number">10.8.8.2</span>-<span class="number">245</span>
   
   <entry>
     <title><![CDATA[centerOS 中yum命令的使用总结]]></title>
-    <link href="http://yoursite.com/2014/12/24/centerOS-%E4%B8%ADyum%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2014/12/24/centerOS-中yum命令的使用总结/</id>
+    <link href="http://localhost:4000/2014/12/24/centerOS-%E4%B8%ADyum%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/"/>
+    <id>http://localhost:4000/2014/12/24/centerOS-中yum命令的使用总结/</id>
     <published>2014-12-24T03:24:37.000Z</published>
     <updated>2014-12-25T07:28:40.000Z</updated>
     <content type="html"><![CDATA[<h3 id="yum_参数">yum 参数</h3>
@@ -248,8 +323,8 @@ remoteip <span class="number">10.8.8.2</span>-<span class="number">245</span>
   
   <entry>
     <title><![CDATA[I can]]></title>
-    <link href="http://yoursite.com/2014/12/24/I%20Can/"/>
-    <id>http://yoursite.com/2014/12/24/I Can/</id>
+    <link href="http://localhost:4000/2014/12/24/I%20Can/"/>
+    <id>http://localhost:4000/2014/12/24/I Can/</id>
     <published>2014-12-23T16:07:07.000Z</published>
     <updated>2014-12-23T16:35:18.000Z</updated>
     <content type="html"><![CDATA[<h3 id="技能表">技能表</h3>
@@ -285,8 +360,8 @@ remoteip <span class="number">10.8.8.2</span>-<span class="number">245</span>
   
   <entry>
     <title><![CDATA[FileReader]]></title>
-    <link href="http://yoursite.com/2014/12/22/FileReader/"/>
-    <id>http://yoursite.com/2014/12/22/FileReader/</id>
+    <link href="http://localhost:4000/2014/12/22/FileReader/"/>
+    <id>http://localhost:4000/2014/12/22/FileReader/</id>
     <published>2014-12-22T11:44:58.000Z</published>
     <updated>2014-12-22T11:54:36.000Z</updated>
     <content type="html"><![CDATA[<p>FileReader 功能是从文件中读取数据，保存到js变量中，</p>
@@ -300,8 +375,8 @@ remoteip <span class="number">10.8.8.2</span>-<span class="number">245</span>
   
   <entry>
     <title><![CDATA[Blob]]></title>
-    <link href="http://yoursite.com/2014/12/22/Blob/"/>
-    <id>http://yoursite.com/2014/12/22/Blob/</id>
+    <link href="http://localhost:4000/2014/12/22/Blob/"/>
+    <id>http://localhost:4000/2014/12/22/Blob/</id>
     <published>2014-12-22T10:40:20.000Z</published>
     <updated>2014-12-22T11:39:12.000Z</updated>
     <content type="html"><![CDATA[<h2 id="概述">概述</h2>
@@ -336,8 +411,8 @@ remoteip <span class="number">10.8.8.2</span>-<span class="number">245</span>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2014/12/22/hello-world/"/>
-    <id>http://yoursite.com/2014/12/22/hello-world/</id>
+    <link href="http://localhost:4000/2014/12/22/hello-world/"/>
+    <id>http://localhost:4000/2014/12/22/hello-world/</id>
     <published>2014-12-22T02:02:25.000Z</published>
     <updated>2014-12-21T05:44:11.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
@@ -366,12 +441,22 @@ remoteip <span class="number">10.8.8.2</span>-<span class="number">245</span>
   </entry>
   
   <entry>
-    <title><![CDATA[readme]]></title>
-    <link href="http://yoursite.com/2014/12/21/readme/"/>
-    <id>http://yoursite.com/2014/12/21/readme/</id>
+    <title><![CDATA[Hexo主题]]></title>
+    <link href="http://localhost:4000/2014/12/21/readme/"/>
+    <id>http://localhost:4000/2014/12/21/readme/</id>
     <published>2014-12-21T06:23:25.000Z</published>
-    <updated>2014-12-21T06:23:31.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="Landscape">Landscape</h1>
+    <updated>2015-01-07T16:58:31.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="几个重要的命令">几个重要的命令</h1>
+<h3 id="编写新的文章">编写新的文章</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> <span class="string">'新的文章'</span></div></pre></td></tr></table></figure>
+
+<h3 id="生成静态页面">生成静态页面</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">generate</span></div></pre></td></tr></table></figure>
+
+<h3 id="发布文章到gitHub">发布文章到gitHub</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">hexo</span> deploy</div></pre></td></tr></table></figure>
+
+<h1 id="Landscape">Landscape</h1>
 <p>A brand new default theme for <a href="http://zespia.tw/hexo/" target="_blank" rel="external">Hexo</a>.</p>
 <ul>
 <li><a href="http://hexo.io/hexo-theme-landscape/" target="_blank" rel="external">Preview</a></li>
@@ -432,16 +517,17 @@ remoteip <span class="number">10.8.8.2</span>-<span class="number">245</span>
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="Landscape">Landscape</h1>
-<p>A brand new default theme for <a href="http://zespia.tw/hexo/" target="_blank" rel="external">Hexo</a>.]]>
+    <![CDATA[<h1 id="几个重要的命令">几个重要的命令</h1>
+<h3 id="编写新的文章">编写新的文章</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</]]>
     </summary>
     
   </entry>
   
   <entry>
     <title><![CDATA[闭包]]></title>
-    <link href="http://yoursite.com/2014/12/21/%E9%97%AD%E5%8C%85/"/>
-    <id>http://yoursite.com/2014/12/21/闭包/</id>
+    <link href="http://localhost:4000/2014/12/21/%E9%97%AD%E5%8C%85/"/>
+    <id>http://localhost:4000/2014/12/21/闭包/</id>
     <published>2014-12-21T06:21:03.000Z</published>
     <updated>2014-12-22T08:13:20.000Z</updated>
     <content type="html"><![CDATA[<p>如何向一个小孩子介绍闭包呢</p>
@@ -460,8 +546,8 @@ remoteip <span class="number">10.8.8.2</span>-<span class="number">245</span>
   
   <entry>
     <title><![CDATA[test]]></title>
-    <link href="http://yoursite.com/2014/12/21/test/"/>
-    <id>http://yoursite.com/2014/12/21/test/</id>
+    <link href="http://localhost:4000/2014/12/21/test/"/>
+    <id>http://localhost:4000/2014/12/21/test/</id>
     <published>2014-12-21T05:59:30.000Z</published>
     <updated>2014-12-21T06:18:08.000Z</updated>
     <content type="html"><![CDATA[<h3 id="test">test</h3>

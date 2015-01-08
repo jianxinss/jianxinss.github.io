@@ -3,26 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>webim | jianxin blog</title>
+  <title>Category: W3C标准差异 | jianxin blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="webim 总结
-从接手webim到现在，已经两年多，webim作为全微博最重要的通讯产品从起先v4版本的，历经v5的蜕变，v6的升华走到现在这个成熟稳定的状态。
-webim 从简单无层次划分的架构，到v6版本的观察者模式，再到集合打包，压缩，测试，布置环境等一系列自动流水化操作。webim强大，成熟，稳定。
-下面我将会从思想理念，技术架构，未来展望等四个方面记录在webim工作这几年的点点滴滴">
-<meta property="og:type" content="article">
-<meta property="og:title" content="webim">
-<meta property="og:url" content="http://localhost:4000/2014/12/25/webim/">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="jianxin blog">
+<meta property="og:url" content="http://localhost:4000/categories/W3C标准差异/">
 <meta property="og:site_name" content="jianxin blog">
-<meta property="og:description" content="webim 总结
-从接手webim到现在，已经两年多，webim作为全微博最重要的通讯产品从起先v4版本的，历经v5的蜕变，v6的升华走到现在这个成熟稳定的状态。
-webim 从简单无层次划分的架构，到v6版本的观察者模式，再到集合打包，压缩，测试，布置环境等一系列自动流水化操作。webim强大，成熟，稳定。
-下面我将会从思想理念，技术架构，未来展望等四个方面记录在webim工作这几年的点点滴滴">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webim">
-<meta name="twitter:description" content="webim 总结
-从接手webim到现在，已经两年多，webim作为全微博最重要的通讯产品从起先v4版本的，历经v5的蜕变，v6的升华走到现在这个成熟稳定的状态。
-webim 从简单无层次划分的架构，到v6版本的观察者模式，再到集合打包，压缩，测试，布置环境等一系列自动流水化操作。webim强大，成熟，稳定。
-下面我将会从思想理念，技术架构，未来展望等四个方面记录在webim工作这几年的点点滴滴">
+<meta name="twitter:title" content="jianxin blog">
+<meta name="twitter:description">
 
   
     <link rel="alternative" href="/atom.xml" title="jianxin blog" type="application/atom+xml">
@@ -70,12 +61,18 @@ webim 从简单无层次划分的架构，到v6版本的观察者模式，再到
     </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-webim" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main">
+  
+    <article id="post-W3C-Vs-IE" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/12/25/webim/" class="article-date">
-  <time datetime="2014-12-25T07:21:51.000Z" itemprop="datePublished">Dec 25 2014</time>
+    <a href="/2015/01/07/W3C-Vs-IE/" class="article-date">
+  <time datetime="2015-01-07T12:46:36.000Z" itemprop="datePublished">Jan 7 2015</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/W3C标准差异/">W3C标准差异</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -83,8 +80,8 @@ webim 从简单无层次划分的架构，到v6版本的观察者模式，再到
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      webim
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/07/W3C-Vs-IE/">W3C Vs IE</a>
     </h1>
   
 
@@ -92,56 +89,35 @@ webim 从简单无层次划分的架构，到v6版本的观察者模式，再到
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="webim_总结">webim 总结</h3>
-<p>从接手webim到现在，已经两年多，webim作为全微博最重要的通讯产品从起先v4版本的，历经v5的蜕变，v6的升华走到现在这个成熟稳定的状态。</p>
-<p>webim 从简单无层次划分的架构，到v6版本的观察者模式，再到集合打包，压缩，测试，布置环境等一系列自动流水化操作。webim强大，成熟，稳定。</p>
-<p>下面我将会从思想理念，技术架构，未来展望等四个方面记录在webim工作这几年的点点滴滴</p>
-<h3 id="思想">思想</h3>
-<h4 id="为什么要做webim">为什么要做webim</h4>
-<h4 id="如何看待即时通讯在各大网站上得应用">如何看待即时通讯在各大网站上得应用</h4>
-<h4 id="怎么做webim">怎么做webim</h4>
-<h4 id="webim_存亡">webim 存亡</h4>
-<h3 id="技术架构">技术架构</h3>
-<h4 id="webim_从启动、服务器连接，到UI_展示，更新的过程">webim 从启动、服务器连接，到UI 展示，更新的过程</h4>
-<h4 id="组件的依赖关系">组件的依赖关系</h4>
-<h4 id="事件交互模型">事件交互模型</h4>
-<h4 id="控件的标准化">控件的标准化</h4>
-<h4 id="风险控制(测试)">风险控制(测试)</h4>
-<h4 id="故障处理策略">故障处理策略</h4>
-<h4 id="远端代码调试">远端代码调试</h4>
+        <h3 id="前言">前言</h3>
+<p>W3C : <code>word wide web</code>万维网联盟，是web技术领域具权威和影响力的国际中立性技术标准机构。<br>W3C最主要的工作就是发展web 规范（recommendations）。这些规范描述了web 通信协议（比如HTML 和 XHTML ）和其他的构建模块</p>
+<p>目前对W3C 标准支持良好的浏览器，chrome，firefox，Opera 都很好，只有IE 最差，使用IE作为内核的浏览器（包括遨游，360安全浏览器等），<br>也对W3C部分标准不兼容</p>
+<h3 id="一、盒子模型">一、盒子模型</h3>
+<p>盒子模型包含content padding border margin<br>不同的是W3c 模型content 什么都不包含而IE盒子模型 包含了border 跟padding</p>
+<h5 id="W3C_标准盒子模型">W3C 标准盒子模型</h5>
+<p><img src="http://ww3.sinaimg.cn/mw690/62e9af2cjw1eo1dvh3zjlj20kq0cnadg.jpg" alt="W3C"></p>
+<h5 id="IE_盒子模型">IE 盒子模型</h5>
+<p><img src="http://ww2.sinaimg.cn/mw690/62e9af2cjw1eo1dvhaz4cj20lz0cugow.jpg" alt="IE"></p>
+<h3 id="二、事件流">二、事件流</h3>
+<p>W3C的事件流：从根节点（html）开始遍历所有的子节点，如果目标事件的父节点设置为捕获时触发，则执行该事件，直到目标被执行，然后再进行事件冒泡（设置为捕获时触发的事件将不再执行）</p>
+<p>IE 事件流：从目标事件被执行，然后再冒泡到父节点的事件，直到根文档</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://localhost:4000/2014/12/25/webim/" data-id="084j4db6ss6j80q5" class="article-share-link">Share</a>
+      <a data-url="http://localhost:4000/2015/01/07/W3C-Vs-IE/" data-id="ct20znylup2hl4e7" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IE标准/">IE标准</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/W3C标准/">W3C标准</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/盒子模型/">盒子模型</a></li></ul>
+
     </footer>
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/2014/12/25/响应式布局/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          响应式布局
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2014/12/24/HTML5-总结/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">HTML5 总结</div>
-    </a>
-  
-</nav>
-
-  
 </article>
 
+
+  
+  
 </section>
         
           <aside id="sidebar">
