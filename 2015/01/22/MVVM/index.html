@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>MVVM | jianxin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="依赖注入解决的是如何有效组织代码依赖模块的问题
+var
+MVVM 的全称是Model view viewModel 这种架构最初是由微软作为软件的展现层设计模式的规范提出，他是mvc 的衍生物。MVVM 的模式的关注点在能够支持时间驱动的UI 开发平台，
+对于这种模式的实现，大部分都是在通过view层生命数据绑定来和其他层分开，这样就方便饿前端开发人员和后端开发人员的分工，
+前端人员在HTML 标">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MVVM">
+<meta property="og:url" content="http://localhost:4000/2015/01/22/MVVM/">
+<meta property="og:site_name" content="jianxin">
+<meta property="og:description" content="依赖注入解决的是如何有效组织代码依赖模块的问题
+var
+MVVM 的全称是Model view viewModel 这种架构最初是由微软作为软件的展现层设计模式的规范提出，他是mvc 的衍生物。MVVM 的模式的关注点在能够支持时间驱动的UI 开发平台，
+对于这种模式的实现，大部分都是在通过view层生命数据绑定来和其他层分开，这样就方便饿前端开发人员和后端开发人员的分工，
+前端人员在HTML 标">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MVVM">
+<meta name="twitter:description" content="依赖注入解决的是如何有效组织代码依赖模块的问题
+var
+MVVM 的全称是Model view viewModel 这种架构最初是由微软作为软件的展现层设计模式的规范提出，他是mvc 的衍生物。MVVM 的模式的关注点在能够支持时间驱动的UI 开发平台，
+对于这种模式的实现，大部分都是在通过view层生命数据绑定来和其他层分开，这样就方便饿前端开发人员和后端开发人员的分工，
+前端人员在HTML 标">
+
+  
+    <link rel="alternative" href="/atom.xml" title="jianxin" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <h1 id="logo-wrap">
+                <a href="/" id="logo">jianxin</a>
+            </h1>
+            
+        </div>
+        <div id="header-inner" class="inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                <a class="main-nav-link" href="/">Home</a>
+                
+                <a class="main-nav-link" href="/archives">Archives</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                
+                <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+                
+                <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://localhost:4000"></form>
+            </div>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-MVVM" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/01/22/MVVM/" class="article-date">
+  <time datetime="2015-01-22T07:49:13.000Z" itemprop="datePublished">Jan 22 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MVVM
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>依赖注入解决的是如何有效组织代码依赖模块的问题</p>
+<p>var</p>
+<p>MVVM 的全称是Model view viewModel 这种架构最初是由微软作为软件的展现层设计模式的规范提出，他是mvc 的衍生物。<br>MVVM 的模式的关注点在能够支持时间驱动的UI 开发平台，</p>
+<p>对于这种模式的实现，大部分都是在通过view层生命数据绑定来和其他层分开，这样就方便饿前端开发人员和后端开发人员的分工，</p>
+<p>前端人员在HTML 标签中写对view model 的绑定数据，mode 和view Model 是后端开发人员通过开发应用的逻辑来维护这两层</p>
+<p>最近几年，mvvm 模式在javascript 中开始有人实现，目前 knockout  kendo mvvm 和 knockback.js   开发框架</p>
+<h4 id="model">model</h4>
+<p>model 代表特定领域的特定的数据或者应用所需要的数据，一个典型的特定领域的数据</p>
+<p>model 仅仅关注数据信息，不关心任何行为，她不格式化数据或者影响在浏览器中得展现，将数据显示是view 层的业务，业务逻辑被封装在viewmodel 中，用来与model 进行交互</p>
+<h4 id="view">view</h4>
+<p>view 是应用当中和用户直接交互的部门，他是一个交互式的UI 来表示ViewModel 的状态，view 是被认为主动的，而不是被动得，i</p>
+<h4 id="viewModel">viewModel</h4>
+<p>view model 是一个专门用于数据转换的controller ，它可以把Model 的信息转换成view 中得信息。同事可以把view 传递的命令传递给Model<br>从这个意义上讲，viewModel， 但是它控制，view 很多的显示逻辑，同事view model也暴漏一些方法来维护view 的状态，根据view 的行为和事件更新model</p>
+<h4 id="优点">优点</h4>
+<ul>
+<li>MVVM 使并行开发更加容易，使前端开发和后端开发人员互不影响</li>
+<li>抽象化view 层， 减少了代码中ing的业务逻辑</li>
+<li>viewModel 比事件驱动更容易测试</li>
+<li>viewModel 的测试不用关系UI 的自动化和交互</li>
+</ul>
+<h4 id="缺点">缺点</h4>
+<ul>
+<li>对于简答的UI 使用MVVM有点太重</li>
+<li>声明式的数据绑定不利于调试，因为命令式的代码可以和容易设置断点，这种模式不利于设置这样的断点</li>
+<li>在大的应用中，在获取大量的概要前很难设计 视图模型层</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2015/01/22/MVVM/" data-id="0bgemkng57g1s27w" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/01/22/javscript-原型/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">javscript 原型</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/W3C标准差异/">W3C标准差异</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOM/">DOM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IE标准/">IE标准</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ready/">Ready</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/W3C标准/">W3C标准</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/位移/">位移</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/兼容性/">兼容性</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/盒子模型/">盒子模型</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运算符/">运算符</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/DOM/" style="font-size: NaNpx;">DOM</a><a href="/tags/IE标准/" style="font-size: NaNpx;">IE标准</a><a href="/tags/Ready/" style="font-size: NaNpx;">Ready</a><a href="/tags/W3C标准/" style="font-size: NaNpx;">W3C标准</a><a href="/tags/位移/" style="font-size: NaNpx;">位移</a><a href="/tags/兼容性/" style="font-size: NaNpx;">兼容性</a><a href="/tags/盒子模型/" style="font-size: NaNpx;">盒子模型</a><a href="/tags/运算符/" style="font-size: NaNpx;">运算符</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">12</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/01/22/MVVM/">MVVM</a>
+          </li>
+        
+          <li>
+            <a href="/2015/01/22/javscript-原型/">javscript 原型</a>
+          </li>
+        
+          <li>
+            <a href="/2015/01/22/javascript-正则表达式/">javascript 正则表达式</a>
+          </li>
+        
+          <li>
+            <a href="/2015/01/19/php-相关/">php 相关</a>
+          </li>
+        
+          <li>
+            <a href="/2015/01/09/位移运算符/">位移运算符</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 zhaojianxin<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.useso.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+  </div>
+</body>
+</html>

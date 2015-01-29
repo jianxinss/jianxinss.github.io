@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tag: 位移 | jianxin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="jianxin">
+<meta property="og:url" content="http://localhost:4000/tags/位移/">
+<meta property="og:site_name" content="jianxin">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jianxin">
+<meta name="twitter:description">
+
+  
+    <link rel="alternative" href="/atom.xml" title="jianxin" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <h1 id="logo-wrap">
+                <a href="/" id="logo">jianxin</a>
+            </h1>
+            
+        </div>
+        <div id="header-inner" class="inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                <a class="main-nav-link" href="/">Home</a>
+                
+                <a class="main-nav-link" href="/archives">Archives</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                
+                <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+                
+                <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://localhost:4000"></form>
+            </div>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-位移运算符" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/01/09/位移运算符/" class="article-date">
+  <time datetime="2015-01-09T02:54:33.000Z" itemprop="datePublished">Jan 9 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/09/位移运算符/">位移运算符</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><code>&lt;&lt;</code> 左移运算符<br>实质是将对应数据的二进制文件逐位向高位移动。并在空出的位置补0 ，最高位溢出舍弃。</p>
+<h5 id="例如">例如</h5>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">5</span>;</div><div class="line">b = a &lt;&lt; <span class="number">1</span>;</div><div class="line"><span class="built_in">c</span> = a &lt;&lt; <span class="number">2</span>;</div><div class="line"></div><div class="line"><span class="comment">//  a = 5 = 0000 0000 0000 0101</span></div><div class="line"><span class="comment">// 左移1位 b = 0000 0000 0000 1010 = 10</span></div><div class="line"><span class="comment">// 左移2位 c = 0000 0000 0001 0100 = 20</span></div></pre></td></tr></table></figure>
+
+<p>可以看出来， 左移运算符主要用来做 2 乘法</p>
+<p><code>&gt;&gt;</code> 右移运算符<br>实质是将对应数据的二进制文件逐位向低位移动。并在高位空出的位置补0 ，低位舍弃出界的数字。</p>
+<h5 id="例如-1">例如</h5>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</div><div class="line">b = a &gt;&gt; <span class="number">1</span>;</div><div class="line"><span class="built_in">c</span> = a &gt;&gt; <span class="number">2</span>;</div><div class="line"></div><div class="line"><span class="comment">//  a = 5 = 0000 0000 0000 1010</span></div><div class="line"><span class="comment">// 左移1位 b = 0000 0000 0000 0101 = 5</span></div><div class="line"><span class="comment">// 左移2位 c = 0000 0000 0001 0010 = 2</span></div></pre></td></tr></table></figure>
+
+<p>可以看出来， 左移运算符主要用来做 2 的整除</p>
+<p>由于位移运算符比乘法运算符速度提高很多，所以在处理数据的乘法运算时，采用位移运算符可以得到很快地速度。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2015/01/09/位移运算符/" data-id="w4v7mumyhmhjw3g8" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/位移/">位移</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/运算符/">运算符</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/W3C标准差异/">W3C标准差异</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOM/">DOM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IE标准/">IE标准</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ready/">Ready</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/W3C标准/">W3C标准</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/位移/">位移</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/兼容性/">兼容性</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/盒子模型/">盒子模型</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运算符/">运算符</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/DOM/" style="font-size: NaNpx;">DOM</a><a href="/tags/IE标准/" style="font-size: NaNpx;">IE标准</a><a href="/tags/Ready/" style="font-size: NaNpx;">Ready</a><a href="/tags/W3C标准/" style="font-size: NaNpx;">W3C标准</a><a href="/tags/位移/" style="font-size: NaNpx;">位移</a><a href="/tags/兼容性/" style="font-size: NaNpx;">兼容性</a><a href="/tags/盒子模型/" style="font-size: NaNpx;">盒子模型</a><a href="/tags/运算符/" style="font-size: NaNpx;">运算符</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">12</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/01/22/MVVM/">MVVM</a>
+          </li>
+        
+          <li>
+            <a href="/2015/01/22/javscript-原型/">javscript 原型</a>
+          </li>
+        
+          <li>
+            <a href="/2015/01/22/javascript-正则表达式/">javascript 正则表达式</a>
+          </li>
+        
+          <li>
+            <a href="/2015/01/19/php-相关/">php 相关</a>
+          </li>
+        
+          <li>
+            <a href="/2015/01/09/位移运算符/">位移运算符</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 zhaojianxin<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.useso.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+  </div>
+</body>
+</html>
