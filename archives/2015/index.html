@@ -63,10 +63,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-MVVM" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-12" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/01/22/MVVM/" class="article-date">
-  <time datetime="2015-01-22T07:49:13.000Z" itemprop="datePublished">Jan 22 2015</time>
+    <a href="/2015/05/24/12/" class="article-date">
+  <time datetime="2015-05-24T15:23:01.000Z" itemprop="datePublished">May 24 2015</time>
 </a>
     
   </div>
@@ -77,7 +77,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/22/MVVM/">MVVM</a>
+      <a class="article-title" href="/2015/05/24/12/">12</a>
     </h1>
   
 
@@ -85,333 +85,269 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>依赖注入解决的是如何有效组织代码依赖模块的问题</p>
-<p>var</p>
-<p>MVVM 的全称是Model view viewModel 这种架构最初是由微软作为软件的展现层设计模式的规范提出，他是mvc 的衍生物。<br>MVVM 的模式的关注点在能够支持时间驱动的UI 开发平台，</p>
-<p>对于这种模式的实现，大部分都是在通过view层生命数据绑定来和其他层分开，这样就方便饿前端开发人员和后端开发人员的分工，</p>
-<p>前端人员在HTML 标签中写对view model 的绑定数据，mode 和view Model 是后端开发人员通过开发应用的逻辑来维护这两层</p>
-<p>最近几年，mvvm 模式在javascript 中开始有人实现，目前 knockout  kendo mvvm 和 knockback.js   开发框架</p>
-<h4 id="model">model</h4>
-<p>model 代表特定领域的特定的数据或者应用所需要的数据，一个典型的特定领域的数据</p>
-<p>model 仅仅关注数据信息，不关心任何行为，她不格式化数据或者影响在浏览器中得展现，将数据显示是view 层的业务，业务逻辑被封装在viewmodel 中，用来与model 进行交互</p>
-<h4 id="view">view</h4>
-<p>view 是应用当中和用户直接交互的部门，他是一个交互式的UI 来表示ViewModel 的状态，view 是被认为主动的，而不是被动得，i</p>
-<h4 id="viewModel">viewModel</h4>
-<p>view model 是一个专门用于数据转换的controller ，它可以把Model 的信息转换成view 中得信息。同事可以把view 传递的命令传递给Model<br>从这个意义上讲，viewModel， 但是它控制，view 很多的显示逻辑，同事view model也暴漏一些方法来维护view 的状态，根据view 的行为和事件更新model</p>
-<h4 id="优点">优点</h4>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2015/05/24/12/" data-id="4a68zfre2w4padx1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-call-apply-bind" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/24/call-apply-bind/" class="article-date">
+  <time datetime="2015-04-24T07:58:42.000Z" itemprop="datePublished">Apr 24 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/24/call-apply-bind/">call apply bind</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>三者的相似之处<br>1 用来改变函数this对象的指向<br>2 第一个参数都是this 要指向的对象<br>3 都可以利用后续参数传参</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+
+<p>bind 方法传递给调用的参数可以逐个列出也可以写在数组中，bind 方法与call apply 最大的不同是前者返回一个绑定上下文的函数，而后两者是直接执行了函数，</p>
+<p>bind 创建了一个新函数，简称绑定函数，绑定函数会以创建它时传入bind 方法的第一个参数作为this 传入bind 方法的后面的参数会按照顺序作为参数来调用原函数。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2015/04/24/call-apply-bind/" data-id="g6tit2uruu4nbvtm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="call-bind" class="article article-type-call" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/24/bind/" class="article-date">
+  <time datetime="2015-04-24T07:58:16.000Z" itemprop="datePublished">Apr 24 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/24/bind/">bind</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2015/04/24/bind/" data-id="pdkb0ruditialaat" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-html5-meta" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/04/08/html5-meta/" class="article-date">
+  <time datetime="2015-04-08T07:16:58.000Z" itemprop="datePublished">Apr 8 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/08/html5-meta/">html5  meta</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>现在开始进行html5 全方面研究，首先从html的head头开始，进行meta 字段的分析。</p>
+<p>-webkit-user-select 和-moz-user-select 的值设为none。可以禁止用户进行复制选择</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2015/04/08/html5-meta/" data-id="lass044ortq0tb5r" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-line-height" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/03/09/line-height/" class="article-date">
+  <time datetime="2015-03-09T01:25:45.000Z" itemprop="datePublished">Mar 9 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/03/09/line-height/">line-height</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>行间距就是控制两行文字垂直距离的东西。在css 中，line-height 被用来控制行与行之间的垂直距离</p>
+<p>不过行间距与半行间距还是取决于css 中得line-height。</p>
 <ul>
-<li>MVVM 使并行开发更加容易，使前端开发和后端开发人员互不影响</li>
-<li>抽象化view 层， 减少了代码中ing的业务逻辑</li>
-<li>viewModel 比事件驱动更容易测试</li>
-<li>viewModel 的测试不用关系UI 的自动化和交互</li>
+<li>默认状态下，浏览器使用1.0-1.2 line-height，这是一个初始值。 你可以定义line-height属性来覆盖初始值。</li>
 </ul>
-<h4 id="缺点">缺点</h4>
+<p>目前有5种方式可以来定义 line-height</p>
+<ol>
+<li>line-height 可以被定义为 body {line-height: normal;}</li>
+<li>line-height 可以被定义为 body {line-height: inherit;}</li>
+<li>line-height 可以被定义为百分比的值 body {line-height: 120%;}</li>
+<li>line-height 可以被定义为长度值 body {line-height: 25px;}</li>
+<li>line-height 纯数字 body{line-height: 1.2}</li>
+</ol>
+<p>缩写line-height</p>
+<p>在font属性中缩写。line-height 紧跟着font-size 的值使用斜线分开，font-size / line-height</p>
+<p>body {<br>    font:100%/normal arial；<br>    font:100%/120% arial；<br>    font:100%/1.2 arial；<br>    font:100%/25px arial；<br>}</p>
+<p>body{<br>    font-size: 16px;<br>    line-height: 120%;</p>
+<pre><code>/*<span class="built_in">line</span>-height 的百分比和body 文字的大小，<span class="number">16</span>px 被用来计算值，这个计算值会被层叠下去的元素继承
+所有被继承下来的元素会忽略本身的font-size 而使用相同的计算出来的<span class="built_in">line</span>-height
+<span class="built_in">line</span>-height 不会随着相关的font-size 做相应比例的缩放。
+*/
+<span class="built_in">line</span>-heigh<span class="variable">t:</span> <span class="number">20</span>px;
+
+/* <span class="built_in">line</span>-height 被设置成为一个长度值，<span class="number">20</span>px
+长度值会被后代的元素继承
+
+所继承下来的元素会忽略本身的font-size而是用相同的继承的<span class="built_in">line</span>-height
+
+*/
+<span class="built_in">line</span>-heigh<span class="variable">t:</span> <span class="keyword">normal</span>;
+
+/*
+norma<span class="variable">l:</span> (约为<span class="number">1.2</span>) 使用继承计算出来的值不如用<span class="keyword">normal</span>
+浏览器在解释<span class="keyword">normal</span> 时候会有细微差别
+所有继承的元素不会忽略本身的font-size ，而使用基于font-size 算出来的<span class="built_in">line</span>-height
+
+现在<span class="built_in">line</span>-height会随着相关的font-size 做相应比例的缩放
+*/
+<span class="built_in">line</span>-heigh<span class="variable">t:</span> <span class="number">1.5</span>;
+
+/**
+    如果既想要<span class="keyword">normal</span> 的灵活有想要设置一个自定义的值，这个时候就要指望 纯数字
+    所有继承下来的元素使用font-size 算出来的<span class="built_in">line</span>-height
+
+    <span class="built_in">line</span>-height
+    会随着相关的font-size 做相应比例的缩放
+    一般来说，设置行高为值： 纯数字是最理想的方式，因为其会随着对应的font-size 进行缩放。
+**/
+</code></pre><p>}</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2015/03/09/line-height/" data-id="jogzx2eh2qalhkwb" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-css-基本" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/03/05/css-基本/" class="article-date">
+  <time datetime="2015-03-05T04:41:21.000Z" itemprop="datePublished">Mar 5 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/03/05/css-基本/">css 基本</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="有关reset-css_和_normalize-css">有关reset.css 和 normalize.css</h4>
+<h5 id="reset">reset</h5>
 <ul>
-<li>对于简答的UI 使用MVVM有点太重</li>
-<li>声明式的数据绑定不利于调试，因为命令式的代码可以和容易设置断点，这种模式不利于设置这样的断点</li>
-<li>在大的应用中，在获取大量的概要前很难设计 视图模型层</li>
+<li>目的是将所有的浏览器自带的样式重置掉，这样便于保持各个浏览器渲染的一致性。它是属于革新派。</li>
+<li>相对比较暴力，影响范围大，讲究的时跨浏览器的一致性</li>
 </ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://localhost:4000/2015/01/22/MVVM/" data-id="0bgemkng57g1s27w" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-javscript-原型" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/01/22/javscript-原型/" class="article-date">
-  <time datetime="2015-01-22T07:48:02.000Z" itemprop="datePublished">Jan 22 2015</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/22/javscript-原型/">javscript 原型</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="有关原型">有关原型</h2>
-<h3 id="对象">对象</h3>
-<h4 id="一切皆为对象">一切皆为对象</h4>
-<p>javascript中的所有东西都是对象，对象是属性的集合数字、字符串、布尔值等原始值是‘伪对象’ 他们同同样拥有属性，但是在栈上分配是按值传递，其他对象是在堆上分配并按照引用传递</p>
-<h4 id="对象的属性可以动态添加和删除">对象的属性可以动态添加和删除</h4>
-<h4 id="除了宿主对象，其他对象皆是由构造函数创建">除了宿主对象，其他对象皆是由构造函数创建</h4>
-<p>javascript 世界里没有类的东西，<br>当然可以使用类和实例等惯用语来描述javascript 中类似的行为，<br>但其机制是完全不同的，</p>
-<p>javascript对象是由构造函数创建的，</p>
-<p>每个对象都有constructor属性表示创建该对象的构造函数。</p>
-<h3 id="原型">原型</h3>
-<p>prototype 是构造函数的一个属性，<br>该属性指向一个对象，<br>而这个对象作为该构造函数所创建的所有实例的基引用，<br>可以把对象的基引用想象成一个自动创建的隐藏属性，<br>当访问对象的一个属性时，<br>首先要查找对象本身，找到则返回<br>找不到则查找base reference 对象的属性，<br>如果还找不到实际上还会沿着原型链向上查找</p>
-<p>直至到根</p>
-<p>只要没有被覆盖</p>
-<p>对象原型的属性都能再所用的实例中找到。</p>
-<h3 id="原型链">原型链</h3>
-<p>修改prototype 指向的对象们还能修改prototype指向饿是哪一个对象，即为prototype 赋予一个不同的对象，这可以实现一种简单的继承。</p>
-<p>如果先实例化一个对象，再为构造函数prototype 赋予一个不同的对象，将会已经创建的对象不在改变，新创建的对象基引用为新的原型对象，</p>
-<p>所用的构造函数prototype 不能为空</p>
-<p>P.prototype  = null无视、<br>Object 构造函数也有prototype 属性，该属性是只读的，可以为原型增加属性</p>
-<p>但是不恩能够赋予不同的对象，<br>因此可以有多层的原型链<br>但是原型链的根必定为Object.prototype 这意味给Object 增加属性会影响所有的属性。</p>
-<h3 id="构造函数和new_的本质">构造函数和new 的本质</h3>
-<p>构造函数是一个地地道道 函数<br>一个函数之所以能成为构造函数，因为new</p>
-<p> Test()在某个对象window上下文执行代码， this  指向这个对象，  new Test()  创建一个对象，并在对象上下文执行代码，然后返回这个对象。</p>
-<p>假如有个函数</p>
-<p>function Test(){}</p>
-<p>创建一个的对象tmp</p>
-<p>构造函数指向自己</p>
-<p>基引用指向自己</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://localhost:4000/2015/01/22/javscript-原型/" data-id="wlwj0km4ve62cgsl" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-javascript-正则表达式" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/01/22/javascript-正则表达式/" class="article-date">
-  <time datetime="2015-01-22T04:27:43.000Z" itemprop="datePublished">Jan 22 2015</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/22/javascript-正则表达式/">javascript 正则表达式</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="正则表达式的特殊应用">正则表达式的特殊应用</h4>
+<h5 id="normalize-css">normalize.css</h5>
 <ul>
-<li>匹配function()</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var <span class="keyword">a</span>  = <span class="string">"function (service, router, other) { var s = service(); var r = router();}"</span>;</div><div class="line"></div><div class="line"><span class="keyword">a</span>.<span class="built_in">match</span>(/^<span class="function"><span class="keyword">function</span>\<span class="title">s</span>*[^\<span class="params">(]*\(\s*([^\)</span>]*)\)/<span class="title">m</span>);</span></div><div class="line"></div><div class="line">console.<span class="built_in">log</span>(<span class="keyword">a</span>);</div><div class="line">[<span class="string">"function (service, router, other)"</span>, <span class="string">"service, router, other"</span>]</div></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://localhost:4000/2015/01/22/javascript-正则表达式/" data-id="u8qsp3n5evtgn6vb" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-php-相关" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/01/19/php-相关/" class="article-date">
-  <time datetime="2015-01-19T04:12:41.000Z" itemprop="datePublished">Jan 19 2015</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/19/php-相关/">php 相关</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="修改php_根目录的文件路径">修改php 根目录的文件路径</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo <span class="keyword">vim</span> /etc/apache2/httpd.<span class="keyword">conf</span></div></pre></td></tr></table></figure>
-
-<h3 id="php-ini的路径">php.ini的路径</h3>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">/etc/</span>php.ini</div></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://localhost:4000/2015/01/19/php-相关/" data-id="phponkefdzm5dx0e" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-位移运算符" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/01/09/位移运算符/" class="article-date">
-  <time datetime="2015-01-09T02:54:33.000Z" itemprop="datePublished">Jan 9 2015</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/09/位移运算符/">位移运算符</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><code>&lt;&lt;</code> 左移运算符<br>实质是将对应数据的二进制文件逐位向高位移动。并在空出的位置补0 ，最高位溢出舍弃。</p>
-<h5 id="例如">例如</h5>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">5</span>;</div><div class="line">b = a &lt;&lt; <span class="number">1</span>;</div><div class="line"><span class="built_in">c</span> = a &lt;&lt; <span class="number">2</span>;</div><div class="line"></div><div class="line"><span class="comment">//  a = 5 = 0000 0000 0000 0101</span></div><div class="line"><span class="comment">// 左移1位 b = 0000 0000 0000 1010 = 10</span></div><div class="line"><span class="comment">// 左移2位 c = 0000 0000 0001 0100 = 20</span></div></pre></td></tr></table></figure>
-
-<p>可以看出来， 左移运算符主要用来做 2 乘法</p>
-<p><code>&gt;&gt;</code> 右移运算符<br>实质是将对应数据的二进制文件逐位向低位移动。并在高位空出的位置补0 ，低位舍弃出界的数字。</p>
-<h5 id="例如-1">例如</h5>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</div><div class="line">b = a &gt;&gt; <span class="number">1</span>;</div><div class="line"><span class="built_in">c</span> = a &gt;&gt; <span class="number">2</span>;</div><div class="line"></div><div class="line"><span class="comment">//  a = 5 = 0000 0000 0000 1010</span></div><div class="line"><span class="comment">// 左移1位 b = 0000 0000 0000 0101 = 5</span></div><div class="line"><span class="comment">// 左移2位 c = 0000 0000 0001 0010 = 2</span></div></pre></td></tr></table></figure>
-
-<p>可以看出来， 左移运算符主要用来做 2 的整除</p>
-<p>由于位移运算符比乘法运算符速度提高很多，所以在处理数据的乘法运算时，采用位移运算符可以得到很快地速度。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://localhost:4000/2015/01/09/位移运算符/" data-id="w4v7mumyhmhjw3g8" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/位移/">位移</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/运算符/">运算符</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-前端技能树" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/01/09/前端技能树/" class="article-date">
-  <time datetime="2015-01-09T01:58:55.000Z" itemprop="datePublished">Jan 9 2015</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/09/前端技能树/">前端技能树</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="技能树">技能树</h3>
-<p><img src="http://ww4.sinaimg.cn/mw690/62e9af2cjw1eo31hfpjlkj20vk0jc0ye.jpg" alt="tree"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://localhost:4000/2015/01/09/前端技能树/" data-id="cddoxnpj69w6es7u" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-DOM-ready-事件概述" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/01/08/DOM-ready-事件概述/" class="article-date">
-  <time datetime="2015-01-08T03:30:22.000Z" itemprop="datePublished">Jan 8 2015</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/08/DOM-ready-事件概述/">DOM ready 事件概述</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="DOM_ready_事件概述">DOM ready 事件概述</h3>
-<p>window 本身有一个window.onload事件，它是在页面所有资源都加载完成之后才触发，而当页面图片等大量资源需要加载时就会导致相应缓慢。window.onload 事件也就迟迟没法触发。<br>所以出现了DOM Ready 事件，这个事件在DOM文档结构准备完毕后，资源加载完成前触发。<br>因为有时候，我们需要在DOM 准备完毕后在修改DOM，如果DOM没有完成就会出现错误。</p>
-<h3 id="DOM_ready_现状">DOM ready 现状</h3>
-<ul>
-<li><p>目前DOMContenLoaded 事件在需要webkit 浏览器以及IE9上都可以使用，此事件会在DOM 文档准备好以后触发，包含在HTML5 标准中，对于支持此事件的浏览器可以直接使用。</p>
+<li><p>提倡的时各个元素都有其存在的道理的理念是尽量保留浏览器默认的样式，但是统一他们的表现形式，它是属于改良派</p>
 </li>
-<li><p>目前IE6，7，8 都不支持DOMContentLoaded 事件，所以目前做的主要工作是兼容IE6，7，8 使其兼容DOM ready事件。</p>
+<li><p>注重通用的东西，注释很详细 注重模块化</p>
 </li>
+<li>保护有用的浏览器样式而不是完全去掉他们</li>
+<li>一般化的样式，为大部分HTML 元素所提供</li>
+<li>修复浏览器自身的bug并保证各个浏览器的一致性</li>
+<li>优化css 的可用性 用一些小的技巧</li>
+<li>解释代码，用注释和详细的文档</li>
 </ul>
-<h3 id="对于IE6，7，8_的hack_方法">对于IE6，7，8  的hack 方法</h3>
-<h4 id="1-setTimeout_检测">1.setTimeout 检测</h4>
-<h4 id="2-监听readystatechange事件，判断readyState_状态是否为Complete，interactive_等触发">2.监听readystatechange事件，判断readyState 状态是否为Complete，interactive 等触发</h4>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.onreadystatechange = <span class="function"><span class="keyword">function</span><span class="params">(e)</span></span>{</div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">document</span>.readyState);</div><div class="line">}</div></pre></td></tr></table></figure>
-
-<h4 id="3-通过设置了script块的defer_属性实现">3.通过设置了script块的defer 属性实现</h4>
-<h4 id="4-内部script：外部script_的改进版本。外部script_需要额外的js_文件，内部script_可以避免此问题">4.内部script：外部script 的改进版本。外部script 需要额外的js 文件，内部script 可以避免此问题</h4>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.write(<span class="string">'&lt;script id=_ie_onload defer src=javascript: void(0)&gt;&lt;/script&gt;'</span>);</div><div class="line"><span class="keyword">var</span> script = <span class="built_in">document</span>.getElementById(<span class="string">'_ie_onload'</span>);</div><div class="line">script.onreadystatechange = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="keyword">if</span>(<span class="keyword">this</span>.readyState == <span class="string">'complete'</span>){</div><div class="line">        <span class="comment">//done</span></div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
-
-<h4 id="5-微软的文档指出doScroll必须在DOM_主文档准备完毕之后才能正常触发，所以通过doScroll判断DOM_是否准备完毕">5.微软的文档指出doScroll必须在DOM 主文档准备完毕之后才能正常触发，所以通过doScroll判断DOM 是否准备完毕</h4>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">IEContentLoaded</span><span class="params">(w,fn)</span></span>{</div><div class="line">    <span class="keyword">var</span> d = <span class="built_in">document</span>, done = <span class="literal">false</span>;</div><div class="line">    init = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="comment">// 初始化方法 执行一次</span></div><div class="line">        <span class="keyword">if</span>(!done){</div><div class="line">            done = <span class="literal">true</span>;</div><div class="line">            fn();</div><div class="line">        }</div><div class="line">    }</div><div class="line">}</div><div class="line"></div><div class="line">(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="keyword">try</span>{</div><div class="line">    d.documentElement.doScroll(<span class="string">'left'</span>);</div><div class="line">    }<span class="keyword">catch</span>(e){</div><div class="line">        setTimeout(<span class="built_in">arguments</span>.callee, <span class="number">50</span>);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line"></div><div class="line">    }</div><div class="line">    <span class="comment">// 没有错误才执行用户的回调方法。</span></div><div class="line">    init();</div><div class="line"></div><div class="line">},<span class="number">1000</span>);</div><div class="line"></div><div class="line"><span class="comment">//  如果用户是在DomReady之后才绑定的方法</span></div><div class="line"></div><div class="line">d.onreadystatechange = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="keyword">if</span>(d.readyState == <span class="string">'complete'</span>){</div><div class="line">        d.onreadstatechange = <span class="literal">null</span>;</div><div class="line">        init();</div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
-
+<p> 支持包括手机浏览器在内的超多浏览器，同时对HTML5 元素，排列，列表的嵌入的内容，表单表格进行一般化。尽管这个项目基于一般化的原则，但是还是在合适的地方使用了更实用的默认值</p>
+<p>最大的区别一个是保留有用的默认值，一个是重置所有的样式</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://localhost:4000/2015/01/08/DOM-ready-事件概述/" data-id="ywfbokugw473u7lo" class="article-share-link">Share</a>
+      <a data-url="http://localhost:4000/2015/03/05/css-基本/" data-id="wrgiqcslnnyr9r5h" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOM/">DOM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ready/">Ready</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/兼容性/">兼容性</a></li></ul>
-
     </footer>
   </div>
   
@@ -419,16 +355,12 @@
 
 
   
-    <article id="post-W3C-Vs-IE" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-CSS3-几个需要了解的属性" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/01/07/W3C-Vs-IE/" class="article-date">
-  <time datetime="2015-01-07T12:46:36.000Z" itemprop="datePublished">Jan 7 2015</time>
+    <a href="/2015/03/04/CSS3-几个需要了解的属性/" class="article-date">
+  <time datetime="2015-03-04T05:34:13.000Z" itemprop="datePublished">Mar 4 2015</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/W3C标准差异/">W3C标准差异</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -437,7 +369,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/07/W3C-Vs-IE/">W3C Vs IE</a>
+      <a class="article-title" href="/2015/03/04/CSS3-几个需要了解的属性/">CSS3 几个需要了解的属性</a>
     </h1>
   
 
@@ -445,29 +377,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="前言">前言</h3>
-<p>W3C : <code>word wide web</code>万维网联盟，是web技术领域具权威和影响力的国际中立性技术标准机构。<br>W3C最主要的工作就是发展web 规范（recommendations）。这些规范描述了web 通信协议（比如HTML 和 XHTML ）和其他的构建模块</p>
-<p>目前对W3C 标准支持良好的浏览器，chrome，firefox，Opera 都很好，只有IE 最差，使用IE作为内核的浏览器（包括遨游，360安全浏览器等），<br>也对W3C部分标准不兼容</p>
-<h3 id="一、文档结构（DOM）">一、文档结构（DOM）</h3>
-<h4 id="盒子模型">盒子模型</h4>
-<p>盒子模型包含content padding border margin<br>不同的是W3c 模型content 什么都不包含而IE盒子模型 包含了border 跟padding</p>
-<h5 id="W3C_标准盒子模型">W3C 标准盒子模型</h5>
-<p><img src="http://ww3.sinaimg.cn/mw690/62e9af2cjw1eo1dvh3zjlj20kq0cnadg.jpg" alt="W3C"></p>
-<h5 id="IE_盒子模型">IE 盒子模型</h5>
-<p><img src="http://ww2.sinaimg.cn/mw690/62e9af2cjw1eo1dvhaz4cj20lz0cugow.jpg" alt="IE"></p>
-<h3 id="二、事件流（event）">二、事件流（event）</h3>
-<p>W3C的事件流：从根节点（html）开始遍历所有的子节点，如果目标事件的父节点设置为捕获时触发，则执行该事件，直到目标被执行，然后再进行事件冒泡（设置为捕获时触发的事件将不再执行）</p>
-<p>IE 事件流：从目标事件被执行，然后再冒泡到父节点的事件，直到根文档</p>
-<h3 id="三、">三、</h3>
+        <h2 id="box-sizing">box-sizing</h2>
+<p>—— content-box 是css2.1 规定的内容 ，长和宽都应用到元素的内容框，在宽度和高度之外绘制 元素的内边距 padding  和 边框  border</p>
+<p>—— border-box 为元素设定的宽度和高度决定了元素的边框盒<br>就是说为元素设定的内边距和外部边框都将在已经设定的宽度和高度内进行绘制</p>
+<p>—— inherit</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://localhost:4000/2015/01/07/W3C-Vs-IE/" data-id="ct20znylup2hl4e7" class="article-share-link">Share</a>
+      <a data-url="http://localhost:4000/2015/03/04/CSS3-几个需要了解的属性/" data-id="a3j8bf2c3fssffmj" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IE标准/">IE标准</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/W3C标准/">W3C标准</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/盒子模型/">盒子模型</a></li></ul>
-
     </footer>
   </div>
   
@@ -475,6 +395,142 @@
 
 
   
+    <article id="post-something-about-scroll" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/03/03/something-about-scroll/" class="article-date">
+  <time datetime="2015-03-03T02:03:32.000Z" itemprop="datePublished">Mar 3 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/03/03/something-about-scroll/">something about scroll</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="scrollTop">scrollTop</h4>
+<p>获取的是内部元素超出外部容器的高度</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2015/03/03/something-about-scroll/" data-id="xl0a7x6b0b16e4xt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-DOM事件" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/02/28/DOM事件/" class="article-date">
+  <time datetime="2015-02-28T09:49:49.000Z" itemprop="datePublished">Feb 28 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/02/28/DOM事件/">DOM事件</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>click  touch load drag drop change input error resize 都是文档对象模型（DOM）事件列表的一部分</p>
+<p>removeEventListener 有一点需要注意的是必须有这个被绑定的回调函数的引用<br>简单地调用element.removeEventListener(‘click’);是不能达到想要的效果的。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2015/02/28/DOM事件/" data-id="x5xv5k1fnfs3aiam" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-html常用字符表" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/02/09/html常用字符表/" class="article-date">
+  <time datetime="2015-02-09T09:12:17.000Z" itemprop="datePublished">Feb 9 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/02/09/html常用字符表/">html常用字符表</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在编写HTML时， 需要使用一些直接的特殊符号。从网上整理了一份，到时候可以直接复制使用。</p>
+<h3 id="特殊符号">特殊符号</h3>
+<p>·⊙①⊕◎Θ⊙<em>○¤㊣㈱＠の</em>□<em>☆** ▲△▼▽⊿<br>▂ ▃ ▄ ▆ </em> <em> ▉ ▊▋▌▍▎▏</em> 回 □ <em>*≡<br>↑↓→←↘↙♀♂┇┅‖$ @ </em> &amp; # ※ 卍 卐 ∞Ψ §∮ № ⌒ ＊</p>
+<h3 id="标点符号">标点符号</h3>
+<p>．。，、；：？！ˉˇ¨`~ 々～‖∶＂＇｀｜·… — ～ - 〃<br>‘’“”〝〞〔〕〈〉《》「」『』〖〗【】（）［］｛｝︻︼﹄﹃</p>
+<h3 id="数学符号">数学符号</h3>
+<p>＋－×÷﹢﹣±／＝ ∥∠ ≌ ∽ ≦ ≧ ≒﹤﹥ ≈ ≡ ≠ ＝ ≤ ≥ ＜ ＞ ≮ ≯<br>∷ ∶ ∫ ∮ ∝ ∞ ∧ ∨ ∑ ∏ ∪ ∩ ∈ ∵ ∴ ⊥ ∥ ∠ ⌒ ⊙ √∟⊿ ㏒ ㏑ ％ ‰</p>
+<h3 id="单位符号">单位符号</h3>
+<p>㎎ ㎏ ㎜ ㎝ ㎞ ㎡ ㏄ ㏎ ㏑ ㏒ ㏕ ℡ ％ ‰ ℃ ℉ °′″＄ ￡ ￥ ￠ ♂ ♀℅</p>
+<h3 id="数字符号">数字符号</h3>
+<p>① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ㈠ ㈡ ㈢ ㈣ ㈤ ㈥ ㈦ ㈧ ㈨ ㈩ №<br>⑴ ⑵ ⑶ ⑷ ⑸ ⑹ ⑺ ⑻ ⑼ ⑽ ⑾ ⑿ ⒀ ⒁ ⒂ ⒃ ⒄ ⒅ ⒆ ⒇<br>⒈ ⒉ ⒊ ⒋ ⒌ ⒍ ⒎ ⒏ ⒐ ⒑ ⒒ ⒓ ⒔ ⒕ ⒖ ⒗ ⒘ ⒙ ⒚ ⒛<br>Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ ⅰ ⅱ ⅲ ⅳ ⅴ ⅵ ⅶ ⅷ ⅸ ⅹ</p>
+<h3 id="希腊字母">希腊字母</h3>
+<p>Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω<br>          α β γ δ ε ζ ν ξ ο π ρ σ η θ ι κ λ μ τ υ φ χ ψ ω</p>
+<h3 id="俄语字符">俄语字符</h3>
+<p>А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я<br>          а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я</p>
+<h3 id="汉语拼音">汉语拼音</h3>
+<p>ā á ǎ à ō ó ǒ ò ē é ě è ī í ǐ ì ū ú ǔ ù ǖ ǘ ǚ ǜ ü ê ɑ  ń ň  ɡ<br>ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ</p>
+<h3 id="中文字符">中文字符</h3>
+<h4 id="经典字符全收集：">经典字符全收集：</h4>
+<p>、。·ˉˇ¨〃々—～‖…‘’“”〔〕〈 〉《》「」『』〖〗【】±＋－×÷∧∨∑∏∪∩∈√⊥∥∠⌒⊙∫∮≡≌≈∽∝≠≮≯≤≥∞∶ ∵∴∷♂♀°′″℃＄¤￠￡‰§№☆<em>〇○</em>◎<strong> 回□*△▽⊿▲▼▁▂▃▄▆</strong>▉▊▋▌▍▎▏※→←↑↓↖↗↘↙<em>* ⅰⅱⅲⅳⅴⅵⅶⅷⅸⅹ①②③④⑤⑥⑦⑧⑨⑩⒈⒉⒊⒋ ⒌⒍⒎⒏⒐⒑⒒⒓⒔⒕⒖⒗⒘⒙⒚⒛⑴⑵⑶⑷⑸⑹⑺⑻⑼⑽⑾⑿⒀⒁⒂⒃⒄⒅⒆⒇㈠㈡㈢㈣㈤㈥㈦㈧㈨㈩ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩⅪⅫ！＂＃￥％＆＇（）＊＋，－．／０１２３４５６７８９：；＜＝＞？＠ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ［＼］＾＿｀ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ｛｜｝ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθ ικλμνξοπρστυφχψ ω︵︶︹︺︿﹀︽︾﹁﹂﹃﹄︻︼︷︸АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыь эюāáǎàēéěèī íǐìōóǒòūúǔùǖǘǚǜüêɑńňɡㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ︱︳︴﹏﹋﹌─━│┃┄┅┆ ┇┈┉┊┋┌┍┎┏┐┑┒┓└┕┖┗┘┙┚┛├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫┬┭┮┯┰┱┲┳┴┵┶┷┸┹┺┻┼┽┾┿╀╁╂╃╄ ╅╆╇╈╉╊╋⊕㊣㈱曱甴囍∟┅﹊﹍╭ ╮╰ ╯ _ ^︵^﹕﹗/\ “ &lt; &gt; `,·。{}~～() -√ $ @ </em> &amp; # 卐℡ ぁ〝〞ミ灬№＊ㄨ≮≯ ﹢﹣／∝≌∽≦≧≒﹤﹥じぷ┗┛￥￡§я-―‥…‰′″℅℉№℡∕∝∣═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬╱ ╲╳▔▕〆〒〡〢〣〤〥〦〧〨〩㎎ ㎏ ㎜ ㎝ ㎞ ㎡ ㏄ ㏎㏑㏒㏕兀︰﹍﹎ ———</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2015/02/09/html常用字符表/" data-id="1d00ivfkeoul3j1d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/archives/2015/page/2/">2</a><a class="extend next" rel="next" href="/archives/2015/page/2/">Next &raquo;</a>
+    </nav>
   
 </section>
         
@@ -511,7 +567,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">12</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">11</span></li></ul>
     </div>
   </div>
 
@@ -523,23 +579,23 @@
       <ul>
         
           <li>
-            <a href="/2015/01/22/MVVM/">MVVM</a>
+            <a href="/2015/05/24/12/">12</a>
           </li>
         
           <li>
-            <a href="/2015/01/22/javscript-原型/">javscript 原型</a>
+            <a href="/2015/04/24/call-apply-bind/">call apply bind</a>
           </li>
         
           <li>
-            <a href="/2015/01/22/javascript-正则表达式/">javascript 正则表达式</a>
+            <a href="/2015/04/24/bind/">bind</a>
           </li>
         
           <li>
-            <a href="/2015/01/19/php-相关/">php 相关</a>
+            <a href="/2015/04/08/html5-meta/">html5  meta</a>
           </li>
         
           <li>
-            <a href="/2015/01/09/位移运算符/">位移运算符</a>
+            <a href="/2015/03/09/line-height/">line-height</a>
           </li>
         
       </ul>
