@@ -309,7 +309,7 @@ body {
   font-weight: bold;
 }
 #header {
-  height: 300px;
+  height: 80px;
   position: relative;
   border-bottom: 1px solid #ddd;
 }
@@ -323,17 +323,11 @@ body {
 }
 #header:before {
   top: 0;
-  background: -webkit-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -moz-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -ms-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: linear-gradient(rgba(0,0,0,0.2), transparent);
+/*background: linear-gradient(rgba(0, 0, 0, 0.2), transparent)*/
 }
 #header:after {
   bottom: 0;
-  background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -moz-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -ms-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: linear-gradient(transparent, rgba(0,0,0,0.2));
+/*background: linear-gradient(transparent, rgba(0, 0, 0, 0.2))*/
 }
 #header-outer {
   height: 100%;
@@ -349,19 +343,20 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("images/banner.jpg") center #000;
+  background: center #5d5d5d;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   z-index: -1;
 }
 #header-title {
-  text-align: center;
-  height: 40px;
+/*text-align: center*/
+  height: 30px;
   position: absolute;
+  width: 180px;
   top: 50%;
-  left: 0;
-  margin-top: -20px;
+  left: 20px;
+  margin-top: -15px;
 }
 #logo,
 #subtitle {
@@ -371,8 +366,8 @@ body {
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 #logo {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 30px;
   letter-spacing: 2px;
 }
 #subtitle {
@@ -385,12 +380,14 @@ body {
 }
 #main-nav {
   float: left;
-  margin-left: -15px;
+  margin-left: 215px;
+  margin-top: 5px;
 }
 .nav-icon,
 .main-nav-link {
   float: left;
   color: #fff;
+  font-size: 18px;
   opacity: 0.6;
   text-decoration: none;
   text-shadow: 0 1px rgba(0,0,0,0.2);
@@ -406,6 +403,7 @@ body {
   opacity: 1;
 }
 .nav-icon {
+  color: #ffa500;
   font-family: FontAwesome;
   text-align: center;
   font-size: 14px;

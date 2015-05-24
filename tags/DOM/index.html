@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tag: DOM | jianxin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="jianxin">
+<meta property="og:url" content="http://localhost:4000/tags/DOM/">
+<meta property="og:site_name" content="jianxin">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jianxin">
+<meta name="twitter:description">
+
+  
+    <link rel="alternative" href="/atom.xml" title="jianxin" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <h1 id="logo-wrap">
+                <a href="/" id="logo">jianxin</a>
+            </h1>
+            
+        </div>
+        <div id="header-inner" class="inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                <a class="main-nav-link" href="/">Home</a>
+                
+                <a class="main-nav-link" href="/archives">Archives</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                
+                <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+                
+                <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://localhost:4000"></form>
+            </div>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-DOM-ready-事件概述" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/01/08/DOM-ready-事件概述/" class="article-date">
+  <time datetime="2015-01-08T03:30:22.000Z" itemprop="datePublished">Jan 8 2015</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/08/DOM-ready-事件概述/">DOM ready 事件概述</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="DOM_ready_事件概述">DOM ready 事件概述</h3>
+<p>window 本身有一个window.onload事件，它是在页面所有资源都加载完成之后才触发，而当页面图片等大量资源需要加载时就会导致相应缓慢。window.onload 事件也就迟迟没法触发。<br>所以出现了DOM Ready 事件，这个事件在DOM文档结构准备完毕后，资源加载完成前触发。<br>因为有时候，我们需要在DOM 准备完毕后在修改DOM，如果DOM没有完成就会出现错误。</p>
+<h3 id="DOM_ready_现状">DOM ready 现状</h3>
+<ul>
+<li><p>目前DOMContenLoaded 事件在需要webkit 浏览器以及IE9上都可以使用，此事件会在DOM 文档准备好以后触发，包含在HTML5 标准中，对于支持此事件的浏览器可以直接使用。</p>
+</li>
+<li><p>目前IE6，7，8 都不支持DOMContentLoaded 事件，所以目前做的主要工作是兼容IE6，7，8 使其兼容DOM ready事件。</p>
+</li>
+</ul>
+<h3 id="对于IE6，7，8_的hack_方法">对于IE6，7，8  的hack 方法</h3>
+<h4 id="1-setTimeout_检测">1.setTimeout 检测</h4>
+<h4 id="2-监听readystatechange事件，判断readyState_状态是否为Complete，interactive_等触发">2.监听readystatechange事件，判断readyState 状态是否为Complete，interactive 等触发</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.onreadystatechange = <span class="function"><span class="keyword">function</span><span class="params">(e)</span></span>{</div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">document</span>.readyState);</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<h4 id="3-通过设置了script块的defer_属性实现">3.通过设置了script块的defer 属性实现</h4>
+<h4 id="4-内部script：外部script_的改进版本。外部script_需要额外的js_文件，内部script_可以避免此问题">4.内部script：外部script 的改进版本。外部script 需要额外的js 文件，内部script 可以避免此问题</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.write(<span class="string">'&lt;script id=_ie_onload defer src=javascript: void(0)&gt;&lt;/script&gt;'</span>);</div><div class="line"><span class="keyword">var</span> script = <span class="built_in">document</span>.getElementById(<span class="string">'_ie_onload'</span>);</div><div class="line">script.onreadystatechange = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="keyword">if</span>(<span class="keyword">this</span>.readyState == <span class="string">'complete'</span>){</div><div class="line">        <span class="comment">//done</span></div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<h4 id="5-微软的文档指出doScroll必须在DOM_主文档准备完毕之后才能正常触发，所以通过doScroll判断DOM_是否准备完毕">5.微软的文档指出doScroll必须在DOM 主文档准备完毕之后才能正常触发，所以通过doScroll判断DOM 是否准备完毕</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">IEContentLoaded</span><span class="params">(w,fn)</span></span>{</div><div class="line">    <span class="keyword">var</span> d = <span class="built_in">document</span>, done = <span class="literal">false</span>;</div><div class="line">    init = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="comment">// 初始化方法 执行一次</span></div><div class="line">        <span class="keyword">if</span>(!done){</div><div class="line">            done = <span class="literal">true</span>;</div><div class="line">            fn();</div><div class="line">        }</div><div class="line">    }</div><div class="line">}</div><div class="line"></div><div class="line">(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="keyword">try</span>{</div><div class="line">    d.documentElement.doScroll(<span class="string">'left'</span>);</div><div class="line">    }<span class="keyword">catch</span>(e){</div><div class="line">        setTimeout(<span class="built_in">arguments</span>.callee, <span class="number">50</span>);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line"></div><div class="line">    }</div><div class="line">    <span class="comment">// 没有错误才执行用户的回调方法。</span></div><div class="line">    init();</div><div class="line"></div><div class="line">},<span class="number">1000</span>);</div><div class="line"></div><div class="line"><span class="comment">//  如果用户是在DomReady之后才绑定的方法</span></div><div class="line"></div><div class="line">d.onreadystatechange = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">    <span class="keyword">if</span>(d.readyState == <span class="string">'complete'</span>){</div><div class="line">        d.onreadstatechange = <span class="literal">null</span>;</div><div class="line">        init();</div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2015/01/08/DOM-ready-事件概述/" data-id="ywfbokugw473u7lo" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOM/">DOM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ready/">Ready</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/兼容性/">兼容性</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/W3C标准差异/">W3C标准差异</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOM/">DOM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IE标准/">IE标准</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ready/">Ready</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/W3C标准/">W3C标准</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/位移/">位移</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/兼容性/">兼容性</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/盒子模型/">盒子模型</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运算符/">运算符</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/DOM/" style="font-size: NaNpx;">DOM</a><a href="/tags/IE标准/" style="font-size: NaNpx;">IE标准</a><a href="/tags/Ready/" style="font-size: NaNpx;">Ready</a><a href="/tags/W3C标准/" style="font-size: NaNpx;">W3C标准</a><a href="/tags/位移/" style="font-size: NaNpx;">位移</a><a href="/tags/兼容性/" style="font-size: NaNpx;">兼容性</a><a href="/tags/盒子模型/" style="font-size: NaNpx;">盒子模型</a><a href="/tags/运算符/" style="font-size: NaNpx;">运算符</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">11</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/05/24/12/">12</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/24/call-apply-bind/">call apply bind</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/24/bind/">bind</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/08/html5-meta/">html5  meta</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/09/line-height/">line-height</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 zhaojianxin<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.useso.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+  </div>
+</body>
+</html>

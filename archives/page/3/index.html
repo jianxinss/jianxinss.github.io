@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Archives | jianxin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="jianxin">
+<meta property="og:url" content="http://localhost:4000/archives/page/3/">
+<meta property="og:site_name" content="jianxin">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jianxin">
+<meta name="twitter:description">
+
+  
+    <link rel="alternative" href="/atom.xml" title="jianxin" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <h1 id="logo-wrap">
+                <a href="/" id="logo">jianxin</a>
+            </h1>
+            
+        </div>
+        <div id="header-inner" class="inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                <a class="main-nav-link" href="/">Home</a>
+                
+                <a class="main-nav-link" href="/archives">Archives</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                
+                <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+                
+                <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://localhost:4000"></form>
+            </div>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-响应式布局" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/25/响应式布局/" class="article-date">
+  <time datetime="2014-12-25T12:07:52.000Z" itemprop="datePublished">Dec 25 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/25/响应式布局/">响应式布局</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="实现响应式布局的方式">实现响应式布局的方式</h3>
+<ul>
+<li>css3-Media Query （最简单）</li>
+<li>借助原生javascript （代码量）</li>
+<li>第三方控制框架</li>
+</ul>
+<p>外联样式表<br>内嵌样式表</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2014/12/25/响应式布局/" data-id="ruxn03gc5zdn2r0o" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-HTML5-总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/24/HTML5-总结/" class="article-date">
+  <time datetime="2014-12-24T09:26:18.000Z" itemprop="datePublished">Dec 24 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/24/HTML5-总结/">HTML5 总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="标签">标签</h1>
+<h3 id="可以进行省略的标签">可以进行省略的标签</h3>
+<h4 id="1-_不允许写的结束符标签">1. 不允许写的结束符标签</h4>
+<p>area, basebr, col, command, embed, hr, img, input, keygen, link, meta, param, source, track, wbr</p>
+<h4 id="2-可以省略结束符的标签">2.可以省略结束符的标签</h4>
+<p>li, dt, dd, p, rt, optgroup, option, colgroup, thread, tbody, tr, td, th</p>
+<h4 id="3-可以完全省略的标签">3.可以完全省略的标签</h4>
+<p>html, head, body, colgroup, tbody</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"zh-CN"</span>&gt;</span></div><div class="line">  ...</div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<h3 id="新增的结构标签">新增的结构标签</h3>
+<h4 id="结构标签">结构标签</h4>
+<ul>
+<li>section 标签<br>表示页面中的一个内容区块，比如章节，页眉，页脚或页面的其他部分。可以用h1,h2,… 结合起来使用，表示文档结构。<br>html5中<section></section> HTML4 中<div></div></li>
+<li><p>article 标签<br>表示页面中一块与上下文不相关的独立内容，比如一篇文章</p>
+</li>
+<li><p>aside 标签<br>表示article标签内容之外的，与article 标签内容相关的辅助信息</p>
+</li>
+<li><p>header 标签<br>表示页面中一个内容区块或整个页面的标题</p>
+</li>
+<li><p>hgroup 标签</p>
+</li>
+</ul>
+<p>表示对整个页面或者页面中的一个内容区块的标题进行组合</p>
+<ul>
+<li>footer 标签</li>
+</ul>
+<p>表示整个页面或一根荣区块的注脚。一般来说，他会包含作者的姓名，创造日期以及创作者的联系信息</p>
+<ul>
+<li>nav 标签<br>表示页面中导航连接的部分</li>
+<li>figure标签<br>表示一段独立的流内容，一般表示文档主题流中得独立单元</li>
+</ul>
+<h4 id="表单标签">表单标签</h4>
+<h4 id="媒体标签">媒体标签</h4>
+<ul>
+<li>video 标签</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">video</span> <span class="attribute">src</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">video</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<ul>
+<li>audio 标签</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">audio</span> <span class="attribute">src</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">audio</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<ul>
+<li>embed 标签</li>
+</ul>
+<h4 id="其他功能标签">其他功能标签</h4>
+<h3 id="废除的标签">废除的标签</h3>
+<h4 id="可以用css_表示的代替的标签">可以用css 表示的代替的标签</h4>
+<h4 id="不再使用frame">不再使用frame</h4>
+<h4 id="只有个别浏览器支持的标签">只有个别浏览器支持的标签</h4>
+<h4 id="其他不常用的标签">其他不常用的标签</h4>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2014/12/24/HTML5-总结/" data-id="4uckap0ldgoejqf5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-centerOS-VPS上-搭建VPN" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/24/centerOS-VPS上-搭建VPN/" class="article-date">
+  <time datetime="2014-12-24T03:52:59.000Z" itemprop="datePublished">Dec 24 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/24/centerOS-VPS上-搭建VPN/">centerOS VPS上 搭建VPN</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-准备工作">1.准备工作</h3>
+<ul>
+<li>删除 pptpd ppp</li>
+<li>清除 配置文件</li>
+</ul>
+<h4 id="命令行如下">命令行如下</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">yum <span class="built_in">remove</span> -<span class="keyword">y</span> pptpd ppp</div><div class="line">/etc/init.<span class="keyword">d</span>/iptables <span class="keyword">stop</span></div><div class="line">rm -rf /etc/pptpd.<span class="keyword">conf</span></div><div class="line">rm -rf /etc/ppp</div></pre></td></tr></table></figure>
+
+<h3 id="2-安装_pptpd">2.安装 pptpd</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum <span class="operator"><span class="keyword">install</span> ppp iptables</span></div></pre></td></tr></table></figure>
+
+<h3 id="3-安装_pptpd_加入_yum_源">3.安装 pptpd 加入 yum 源</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rpm -Uvh http://poptop.sourceforge.net/yum/stable/rhel6/pptp-<span class="operator"><span class="keyword">release</span>-<span class="keyword">current</span>.noarch.rpm</span></div><div class="line">yum <span class="keyword">install</span> pptpd</div></pre></td></tr></table></figure>
+
+<h3 id="4-开启路由转发">4.开启路由转发</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">vi</span> /etc/sysctl.<span class="keyword">conf</span></div></pre></td></tr></table></figure>
+
+<h4 id="(1)修改">(1)修改</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">&gt; net.ipv4.ip_forward </span>=<span class="string"> 1</span></div></pre></td></tr></table></figure>
+
+<h4 id="(2)执行">(2)执行</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">/sbin/</span>sysctl -p</div></pre></td></tr></table></figure>
+
+<h3 id="5-配置">5.配置</h3>
+<h4 id="(1)修改_/etc/ppp/options-pptpd">(1)修改 /etc/ppp/options.pptpd</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="title">vi</span> /etc/ppp/options.pptpd</div><div class="line">ms-dns <span class="number">4.2.2.1</span></div><div class="line">ms-dns <span class="number">4.2.2.2</span></div></pre></td></tr></table></figure>
+
+<h4 id="(2)修改_/etc/pptpd-conf">(2)修改 /etc/pptpd.conf</h4>
+<pre><code><span class="title">localip</span> <span class="number">10.8.8.1</span>
+remoteip <span class="number">10.8.8.2</span>-<span class="number">245</span>
+</code></pre><h4 id="(3)开机启动、运行">(3)开机启动、运行</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">chkconfig pptpd <span class="command"><span class="keyword">on</span></span></div><div class="line">service pptpd start</div></pre></td></tr></table></figure>
+
+<h4 id="(4)添加vpn_账号密码">(4)添加vpn 账号密码</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="operator">-e</span> <span class="string">'vpntest * vpntestpassword *'</span> &gt;&gt; /etc/ppp/chap-secrets</div><div class="line"><span class="built_in">echo</span> <span class="operator">-e</span> <span class="string">'vpn * 123456 *'</span> &gt;&gt; /etc/ppp/chap-secrets</div></pre></td></tr></table></figure>
+
+<h4 id="(5)开启端口">(5)开启端口</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">/sbin/i</span>ptables -A INPUT -p tcp --dport <span class="number">1723</span> -j ACCEPT</div><div class="line"><span class="regexp">/sbin/i</span>ptables -A INPUT -p tcp --dport <span class="number">47</span> -j ACCEPT</div><div class="line"><span class="regexp">/sbin/i</span>ptables -A INPUT -p gre -j ACCEPT</div></pre></td></tr></table></figure>
+
+<h4 id="(6)允许外网vpn链接">(6)允许外网vpn链接</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">iptables</span> -A POSTROUTING -t nat -s <span class="number">10.8.8.0</span>/<span class="number">24</span> -o eth0 -j MASQUERADE</div></pre></td></tr></table></figure>
+
+<h4 id="(7)_保存，执行">(7) 保存，执行</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">service</span> <span class="title">iptables</span> save</span></div><div class="line">service iptables start</div></pre></td></tr></table></figure>
+
+<h6 id="只允许规定数据包转发-即只允许内网规定的IP上网…">只允许规定数据包转发..即只允许内网规定的IP上网…</h6>
+<h3 id="6-_问题">6. 问题</h3>
+<p>VPN 已经链接上但是没有数据包的发送跟接受</p>
+<figure class="highlight `"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="title">iptables</span> -A POSTROUTING -t nat -s <span class="number">10.8.8.0</span>/<span class="number">24</span> -o eth0 -j MASQUERADE</div><div class="line">service iptables save</div></pre></td></tr></table></figure>
+
+<h4 id="注意在修改了iptables后_需要save">注意在修改了iptables后 需要save</h4>
+<h4 id="10-8-8-0_要与_localip（10-8-8-1）相一致">10.8.8.0 要与 localip（10.8.8.1）相一致</h4>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2014/12/24/centerOS-VPS上-搭建VPN/" data-id="hdltuvimezzxuydu" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-centerOS-中yum命令的使用总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/24/centerOS-中yum命令的使用总结/" class="article-date">
+  <time datetime="2014-12-24T03:24:37.000Z" itemprop="datePublished">Dec 24 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/24/centerOS-中yum命令的使用总结/">centerOS 中yum命令的使用总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="yum_参数">yum 参数</h3>
+<ul>
+<li>-y 自动选择y，全自动 ,不带y 手动选择</li>
+</ul>
+<h3 id="yum_命令">yum 命令</h3>
+<ul>
+<li><p>yum update</p>
+</li>
+<li><p>yum install</p>
+</li>
+<li><p>yum remove</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2014/12/24/centerOS-中yum命令的使用总结/" data-id="znyaow91lgas4k1d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-I Can" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/24/I Can/" class="article-date">
+  <time datetime="2014-12-23T16:07:07.000Z" itemprop="datePublished">Dec 24 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/24/I Can/">I can</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="技能表">技能表</h3>
+<ul>
+<li><p>HTML5  CSS3<br>  熟练掌握基础<br>  需要做出一个Demo 页面<br>  在手机上展示的页面<br>  HTML5解决方案</p>
+</li>
+<li><p>设计模式<br>  设计模式在webim 上的应用<br>  webim 的架构图</p>
+</li>
+<li><p>面向对象编程</p>
+</li>
+<li>浏览器差异</li>
+<li>AJAX 具体</li>
+<li><p>NodeJS</p>
+</li>
+<li><p>框架<br>  web 前端框架</p>
+</li>
+<li><p>性能<br>  web 标准化<br>  性能优化的方法<br>  可用性<br>  可访问性<br>  兼容性</p>
+</li>
+</ul>
+<ul>
+<li>自我认知方面<br>  自我的管理能力<br>  健康的创业心态<br>  快速的学习能力<br>  乐于分享沟通</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2014/12/24/I Can/" data-id="u0y2ice5vw0ckh3e" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-FileReader" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/22/FileReader/" class="article-date">
+  <time datetime="2014-12-22T11:44:58.000Z" itemprop="datePublished">Dec 22 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/22/FileReader/">FileReader</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>FileReader 功能是从文件中读取数据，保存到js变量中，</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2014/12/22/FileReader/" data-id="s8vorshhg2ogw4li" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Blob" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/22/Blob/" class="article-date">
+  <time datetime="2014-12-22T10:40:20.000Z" itemprop="datePublished">Dec 22 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/22/Blob/">Blob</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="概述">概述</h2>
+<p>一个Blob 对象代表一个类似文件的不可变对象，包含原始数据。Blobs代表的数据不一定是javascript 的原生格式数据。文件接口是基于Blob之上的，<br>继承了blob 的方法并且扩展到支持用户的系统文件 。</p>
+<p>构建一个Blob 的简单方法是通过调用Blob() 的构造函数。另外一个方法是使用slice() 方法创建一个包含Blob 数据子集的Blob 数据</p>
+<h2 id="构造方法">构造方法</h2>
+<p>Blob() 返回一个新建的Blob对象。</p>
+<h2 id="属性">属性</h2>
+<p>Blob.size <code>readonly</code><br>   bytes 参数单位是bytes</p>
+<p>Blob.type <code>readonly</code><br>   返回blob 的数据类型。如果类型未知，返回一个空字符串</p>
+<h2 id="方法">方法</h2>
+<p>Blob.slice<br>    返回一个包含了从原对象指定返回字节的新的Blob 对象。</p>
+<h2 id="示例">示例</h2>
+<h4 id="one_创建一个Blob_对象">one 创建一个Blob 对象</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> aFileParts = ['&lt;a id=<span class="string">"a"</span>&gt;&lt;b id=<span class="string">"b"</span>&gt;hey!&lt;/b&gt;&lt;/a&gt;'];</div><div class="line"><span class="keyword">var</span> oMyBlob = <span class="keyword">new</span> Blob(aFileParts, {<span class="keyword">type</span> : <span class="symbol">'text</span>/html'}); <span class="comment">// the blob</span></div><div class="line"><span class="comment">//Blob {type: "text/html", size: 32, slice: function}size: 32type: "text/html"__proto__: Blob}</span></div></pre></td></tr></table></figure>
+
+<h4 id="two_返回一个url">two 返回一个url</h4>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//var typedArray = GetTheTypedArraySomehow();</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> typedArray = <span class="symbol">'123456789</span>0';</div><div class="line"><span class="keyword">var</span> blob = <span class="keyword">new</span> Blob([typedArray], {<span class="keyword">type</span>: <span class="symbol">'application</span>/octet-binary'}); <span class="comment">// pass a useful mime type here</span></div><div class="line"><span class="keyword">var</span> url = URL.createObjectURL(blob);</div><div class="line"><span class="comment">// url will be something like: blob:d3958f5c-0777-0845-9dcf-2cb28783acaf</span></div><div class="line"><span class="comment">// now you can use the url in any context that regular URLs can be used in, for example img.src, etc.</span></div></pre></td></tr></table></figure>
+
+<h4 id="从Blob读取数据">从Blob读取数据</h4>
+<p>唯一的方法是使用 FileReader</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> reader = new <span class="type">FileReader</span>();</div><div class="line">reader.addEventListener(<span class="string">"loadend"</span>, function(data) {</div><div class="line">    console.log('data',data);</div><div class="line">    // 返回的数据是 <span class="number">10</span></div><div class="line">   // reader.<span class="literal">result</span> contains the contents <span class="keyword">of</span> blob <span class="keyword">as</span> a typed <span class="type">array</span></div><div class="line">});</div><div class="line">reader.readAsArrayBuffer(blob);</div></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2014/12/22/Blob/" data-id="9ocm3qr7q8bp7p70" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/22/hello-world/" class="article-date">
+  <time datetime="2014-12-22T02:02:25.000Z" itemprop="datePublished">Dec 22 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/22/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2014/12/22/hello-world/" data-id="l41tezp87zfao5fs" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-readme" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/21/readme/" class="article-date">
+  <time datetime="2014-12-21T06:23:25.000Z" itemprop="datePublished">Dec 21 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/21/readme/">Hexo主题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="几个重要的命令">几个重要的命令</h1>
+<h3 id="编写新的文章">编写新的文章</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> <span class="string">'新的文章'</span></div></pre></td></tr></table></figure>
+
+<h3 id="生成静态页面">生成静态页面</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">generate</span></div></pre></td></tr></table></figure>
+
+<h3 id="发布文章到gitHub">发布文章到gitHub</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="title">hexo</span> deploy</div></pre></td></tr></table></figure>
+
+<h1 id="Landscape">Landscape</h1>
+<p>A brand new default theme for <a href="http://zespia.tw/hexo/" target="_blank" rel="external">Hexo</a>.</p>
+<ul>
+<li><a href="http://hexo.io/hexo-theme-landscape/" target="_blank" rel="external">Preview</a></li>
+</ul>
+<h2 id="Installation">Installation</h2>
+<h3 id="Install">Install</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape</div></pre></td></tr></table></figure>
+
+<p><strong>Landscape requires Hexo 2.4 and above.</strong></p>
+<h3 id="Enable">Enable</h3>
+<p>Modify <code>theme</code> setting in <code>_config.yml</code> to <code>landscape</code>.</p>
+<h3 id="Update">Update</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> themes/landscape</div><div class="line">git pull</div></pre></td></tr></table></figure>
+
+<h2 id="Configuration">Configuration</h2>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"># Header</span></div><div class="line"><span class="label">menu:</span></div><div class="line">  Home: /</div><div class="line">  Archives: /archives</div><div class="line"><span class="label">rss:</span> /atom.xml</div><div class="line"></div><div class="line"><span class="preprocessor"># Content</span></div><div class="line"><span class="label">excerpt_link:</span> Read More</div><div class="line"><span class="label">fancybox:</span> true</div><div class="line"></div><div class="line"><span class="preprocessor"># Sidebar</span></div><div class="line"><span class="label">sidebar:</span> right</div><div class="line"><span class="label">widgets:</span></div><div class="line">- category</div><div class="line">- tag</div><div class="line">- tagcloud</div><div class="line">- archives</div><div class="line">- recent_posts</div><div class="line"></div><div class="line"><span class="preprocessor"># Miscellaneous</span></div><div class="line"><span class="label">google_analytics:</span></div><div class="line"><span class="label">favicon:</span> /favicon.png</div><div class="line"><span class="label">twitter:</span></div><div class="line"><span class="label">google_plus:</span></div></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>menu</strong> - Navigation menu</li>
+<li><strong>rss</strong> - RSS link</li>
+<li><strong>excerpt_link</strong> - “Read More” link at the bottom of excerpted articles. <code>false</code> to hide the link.</li>
+<li><strong>fancybox</strong> - Enable <a href="http://fancyapps.com/fancybox/" target="_blank" rel="external">Fancybox</a></li>
+<li><strong>sidebar</strong> - Sidebar style. You can choose <code>left</code>, <code>right</code>, <code>bottom</code> or <code>false</code>.</li>
+<li><strong>widgets</strong> - Widgets displaying in sidebar</li>
+<li><strong>google_analytics</strong> - Google Analytics ID</li>
+<li><strong>favicon</strong> - Favicon path</li>
+<li><strong>twitter</strong> - Twiiter ID</li>
+<li><strong>google_plus</strong> - Google+ ID</li>
+</ul>
+<h2 id="Features">Features</h2>
+<h3 id="Fancybox">Fancybox</h3>
+<p>Landscape uses <a href="http://fancyapps.com/fancybox/" target="_blank" rel="external">Fancybox</a> to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">![<span class="link_label">img caption</span>](<span class="link_url">img url</span>)</div><div class="line"></div><div class="line"><span class="xml"><span class="tag">&lt;<span class="title">hexoescape</span>&gt;</span></span>0<span class="xml"><span class="tag">&lt;/<span class="title">hexoescape</span>&gt;</span></span></div></pre></td></tr></table></figure>
+
+<h3 id="Sidebar">Sidebar</h3>
+<p>You can put your sidebar in left side, right side or bottom of your site by editing <code>sidebar</code> setting.</p>
+<p>Landscape provides 5 built-in widgets:</p>
+<ul>
+<li>category</li>
+<li>tag</li>
+<li>tagcloud</li>
+<li>archives</li>
+<li>recent_posts</li>
+</ul>
+<p>All of them are enabled by default. You can edit them in <code>widget</code> setting.</p>
+<h2 id="Development">Development</h2>
+<h3 id="Requirements">Requirements</h3>
+<ul>
+<li><a href="http://gruntjs.com/" target="_blank" rel="external">Grunt</a> 0.4+</li>
+<li>Hexo 2.4+</li>
+</ul>
+<h3 id="Grunt_tasks">Grunt tasks</h3>
+<ul>
+<li><strong>default</strong> - Download <a href="http://fancyapps.com/fancybox/" target="_blank" rel="external">Fancybox</a> and <a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a>.</li>
+<li><strong>fontawesome</strong> - Only download <a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a>.</li>
+<li><strong>fancybox</strong> - Only download <a href="http://fancyapps.com/fancybox/" target="_blank" rel="external">Fancybox</a>.</li>
+<li><strong>clean</strong> - Clean temporarily files and downloaded files.</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2014/12/21/readme/" data-id="0t1xldylbnz31nqk" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-闭包" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/12/21/闭包/" class="article-date">
+  <time datetime="2014-12-21T06:21:03.000Z" itemprop="datePublished">Dec 21 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/21/闭包/">闭包</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>如何向一个小孩子介绍闭包呢</p>
+<p>以上是摘要<br>
+        
+          <p class="article-more-link">
+            <a href="/2014/12/21/闭包/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost:4000/2014/12/21/闭包/" data-id="0vd7zhog3q71rhw4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/archives/page/4/">4</a><a class="extend next" rel="next" href="/archives/page/4/">Next &raquo;</a>
+    </nav>
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/W3C标准差异/">W3C标准差异</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOM/">DOM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IE标准/">IE标准</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ready/">Ready</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/W3C标准/">W3C标准</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/位移/">位移</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/兼容性/">兼容性</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/盒子模型/">盒子模型</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运算符/">运算符</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/DOM/" style="font-size: NaNpx;">DOM</a><a href="/tags/IE标准/" style="font-size: NaNpx;">IE标准</a><a href="/tags/Ready/" style="font-size: NaNpx;">Ready</a><a href="/tags/W3C标准/" style="font-size: NaNpx;">W3C标准</a><a href="/tags/位移/" style="font-size: NaNpx;">位移</a><a href="/tags/兼容性/" style="font-size: NaNpx;">兼容性</a><a href="/tags/盒子模型/" style="font-size: NaNpx;">盒子模型</a><a href="/tags/运算符/" style="font-size: NaNpx;">运算符</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">11</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/05/24/12/">12</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/24/call-apply-bind/">call apply bind</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/24/bind/">bind</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/08/html5-meta/">html5  meta</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/09/line-height/">line-height</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 zhaojianxin<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.useso.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+  </div>
+</body>
+</html>
