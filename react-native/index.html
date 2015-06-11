@@ -37,341 +37,384 @@
 
 	<body>
 
-		<div class="reveal">
+	<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<img src="test/img/react.png"  class="no-bg"/>
-					<p class="fragment highlight-strong">React Native</p>
-				</section>
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<img src="test/img/react.png" class="no-bg"/>
 
-				<section data-transition="zoom">
-					<h3>Write once </h3>
-					<h3>Run anywhere</h3>
-					<h2>一次编码， 处处运行</h2>
-					<aside class="notes">一次编码，处处运行永远是程序员们的乌托邦，二十年前，Java高举大旗登场，击败了众多竞争对手。时至今日，事实已经证明Java笨重的体型和缓慢的法阵
+				<p class="fragment highlight-strong">React Native</p>
+			</section>
+
+			<section data-transition="zoom">
+				<h3>Write once </h3>
+
+				<h3>Run anywhere</h3>
+
+				<h2>一次编码， 处处运行</h2>
+				<aside class="notes">一次编码，处处运行永远是程序员们的乌托邦，二十年前，Java高举大旗登场，击败了众多竞争对手。时至今日，事实已经证明Java笨重的体型和缓慢的法阵
 					已经很难在抓住这个移动互联网的时代。
 					在新的移动浪潮时代,一个应用想要取胜，完美的用户体验是必不可少的。在用户体验上 相比web来讲native完胜。但是我们必须针对于各种不同的平台进行开发。
 					这是工程师们几年来一直存在的强需求。
 
-					</aside>
-				</section>
-				<section data-transition="concave">
-					<ul>
-						<li class="fragment current-visible highlight-green"><em> &nbsp;&nbsp;√ &nbsp;&nbsp;</em>完美的用户体验</li>
-						<li class="fragment current-visible highlight-green"><em> &nbsp;&nbsp;√&nbsp;&nbsp; </em>高速的开发效率</li>
-						<li class="fragment highlight-red"><em>&nbsp;&nbsp;X&nbsp;&nbsp;</em>针对不同的平台</li>
-						<li class="fragment highlight-red"><em>&nbsp;&nbsp;X&nbsp;&nbsp;</em>后期维护任务</li>
-					</ul>
-				</section>
+				</aside>
+			</section>
+			<section data-transition="concave">
+				<ul>
+					<li class="fragment current-visible highlight-green"><em> &nbsp;&nbsp;√ &nbsp;&nbsp;</em>完美的用户体验</li>
+					<li class="fragment current-visible highlight-green"><em> &nbsp;&nbsp;√&nbsp;&nbsp; </em>高速的开发效率</li>
+					<li class="fragment highlight-red"><em>&nbsp;&nbsp;X&nbsp;&nbsp;</em>针对不同的平台</li>
+					<li class="fragment highlight-red"><em>&nbsp;&nbsp;X&nbsp;&nbsp;</em>后期维护任务</li>
+				</ul>
+			</section>
 
 
-				<section data-transition="zoom">
-					<h1>跨平台</h1>
-				</section>
+			<section data-transition="zoom">
+				<h1>跨平台</h1>
+			</section>
 
-				<section data-transition="slide">
-					<h1>跨平台解决方案</h1>
-					<h3 class="">之</h3>
-					<h2><strong>React Native</strong>
-						</h2>
-					<h4><span class="fragment highlight-blue">A FRAMEWORK FOR BUILDING NATIVE APPS USING REACT</span></h4>
+			<section data-transition="slide">
+				<h1>跨平台解决方案</h1>
+
+				<h3 class="">之</h3>
+
+				<h2><strong>React Native</strong>
+				</h2>
+				<h4><span class="fragment highlight-blue">A FRAMEWORK FOR BUILDING NATIVE APPS USING REACT</span></h4>
+
+				<p>
+					<small>Created by <a href="">赵建鑫</a> / <a>@James</a></small>
+				</p>
+			</section>
+
+			<section data-transition="slide">
+				<section><h1>what</h1></section>
+				<section>
 					<p>
-						<small>Created by <a href="">赵建鑫</a> / <a>@James</a></small>
+						React Native enables you to build world-class application experiences on native platforms using a
+						consistent developer experience based on JavaScript and React.
+						The focus of React Native is on developer efficiency across all the platforms you care about —
+						learn once, write anywhere. Facebook uses React Native in multiple production apps and will continue
+						investing in React Native.
 					</p>
 				</section>
+				<section data-transition="convex">
+					<ol>
+						<li class="">React Native可以让开发者在基于Javascript和React的开发经验基础之上开发一款与原生体验一致的应用。</li>
+						<li class="fragment">React Native核心放在解决的开发效率问题。<strong>learn once, write anywhere</strong></li>
+						<li class="fragment">Facebook 将会利用React Native开发他们的应用，并继续投资于React Native。</li>
+					</ol>
 
-				<section data-transition="slide">
-					<section><h1>what</h1></section>
-					<section>
-						<p>
-							React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React.
-							The focus of React Native is on developer efficiency across all the platforms you care about —
-							learn once, write anywhere. Facebook uses React Native in multiple production apps and will continue investing in React Native.
-						</p>
-					</section>
-					<section data-transition="convex">
-						<ol>
-							<li class="">React Native可以让开发者在基于Javascript和React的开发经验基础之上开发一款与原生体验一致的应用。</li>
-							<li class="fragment">React Native核心放在解决的开发效率问题。<strong>learn once, write anywhere</strong></li>
-							<li class="fragment">Facebook 将会利用React Native开发他们的应用，并继续投资于React Native。</li>
-						</ol>
-
-					</section>
 				</section>
-				<section data-transition="slide">
-					<section>
-						What we really want is the user experience of the native mobile platforms, combined with the developer experience we have when building with React on the web.
-					</section>
-					<section>
-						With a bit of work, we can make it so the exact same React that's on GitHub can power truly native mobile applications. The only difference in the mobile environment is that instead of running React in the browser and rendering to divs and spans, we run it an embedded instance of JavaScriptCore inside our apps and render to higher-level platform-specific components.
-					</section>
-					<section>
-						It's worth noting that we're not chasing <strong class="fragment highlight-red">“write once, run anywhere.”</strong>
-					</section>
-
-					<section>
-						Different platforms have different looks, feels, and capabilities
-					</section>
-
-					<section>
-						and as such, we should still be developing discrete apps for each platform, but the same set of engineers should be able to build applications for whatever platform they choose, without needing to learn a fundamentally different set of technologies for each.</section>
-					<section>
-						We call this approach
-						<blockquote>
-							 <strong class="fragment highlight-green">“learn once, write anywhere.”</strong>
-						</blockquote>
-					</section>
-
-					<blockquote>
-
-					</blockquote>
-
+			</section>
+			<section data-transition="slide">
+				<section>
+					What we really want is the user experience of the native mobile platforms, combined with the developer
+					experience we have when building with React on the web.
 				</section>
 				<section>
-					<a href="#" class="navigate-down">
-						<img data-src="test/img/index.jpg" alt="Down arrow">
-					</a>
-					<a href="#" class="navigate-down">
-						<img data-src="test/img/me.jpg" alt="Down arrow">
-					</a>
+					With a bit of work, we can make it so the exact same React that's on GitHub can power truly native
+					mobile applications. The only difference in the mobile environment is that instead of running React in
+					the browser and rendering to divs and spans, we run it an embedded instance of JavaScriptCore inside our
+					apps and render to higher-level platform-specific components.
+				</section>
+				<section>
+					It's worth noting that we're not chasing <strong class="fragment highlight-red">“write once, run
+					anywhere.”</strong>
 				</section>
 
+				<section>
+					Different platforms have different looks, feels, and capabilities
+				</section>
+
+				<section>
+					and as such, we should still be developing discrete apps for each platform, but the same set of
+					engineers should be able to build applications for whatever platform they choose, without needing to
+					learn a fundamentally different set of technologies for each.
+				</section>
+				<section>
+					We call this approach
+					<blockquote>
+						<strong class="fragment highlight-green">“learn once, write anywhere.”</strong>
+					</blockquote>
+				</section>
+
+				<blockquote>
+
+				</blockquote>
+
+			</section>
+			<section>
+				<h2>举个例子</h2>
+			</section>
+			<section>
+				<a href="#" class="navigate-down">
+					<img data-src="test/img/index.jpg" alt="Down arrow">
+				</a>
+				<a href="#" class="navigate-down">
+					<img data-src="test/img/me.jpg" alt="Down arrow">
+				</a>
+			</section>
+			<section>
+				<section><h2>架构图</h2></section>
 				<section>
 					<h2></h2>
 					<img data-src="test/img/React-native-module.png" alt="" width="800" height="600">
 				</section>
+			</section>
+
+
+			</section>
+
+			<section>
+				<section id="fragments2">
+					<h2>当前移动应用的解决方案</h2>
+					<ol class="fragment">
+						<li class="fragment">web流</li>
+						<li class="fragment">代码转换流</li>
+						<li class="fragment">编译流</li>
+						<li class="fragment">虚拟机流</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>①web流</h2>
+
+					<section data-transition="zoom">
+						<h2><strong class="fragment highlight-blue"> hybrid</strong></h2>
+						<img src="test/img/hybrid-app.jpg"/>
+					</section>
 
 				</section>
 
 				<section>
-					<section id="fragments2">
-						<h2 class="fragment">当前移动应用的解决方案</h2>
-						<ol class="fragment">
-							<li class="fragment">web流</li>
-							<li class="fragment">代码转换流</li>
-							<li class="fragment">编译流</li>
-							<li class="fragment">虚拟机流</li>
-						</ol>
-					</section>
 
-					<section>
-						<h2>①web流</h2>
+					<p>每个平台都有<strong>浏览器</strong>，都有<strong>webView</strong> 控件，我们可以使用<span class="fragment highlight-red">HTML</span>、<span
+							class="fragment highlight-red">CSS</span>和<span class="fragment highlight-red">javascript</span>
+						将web 的内容和体验搬到本地。通过这么做，我们可以将逻辑
+						与UI渲染部分统一，以减少开发和维护成本，这种方式开发APP称之为<em>Hybrid app</em>。我们用的AppCan
+						、phoneGap和Cordova。这些框架一般都会放出相机、地理位置定位等调用硬件的接口
+						</span>
+					</p>
+				</section>
 
-						<section data-transition="zoom">
+				<section>
+					<h2> web 流产生的问题</h2>
 
-								<h2 ><strong class="fragment highlight-blue"> hybrid</strong></h2>
-								<img src="test/img/hybrid-app.jpg" />
+					<p>1 性能慢</p>
 
-						</section>
+					<p> 2 功能缺失</p>
+				</section>
 
-					</section>
+				<section>
+					<h2>②<em>
+						<代码/>
+					</em> 转换流
+					</h2>
 
-					<section>
-
-						<p>每个平台都有<strong>浏览器</strong>，都有<strong>webView</strong> 控件，我们可以使用<span class="fragment highlight-red">HTML</span>、<span class="fragment highlight-red">CSS</span>和<span class="fragment highlight-red">javascript</span> 将web 的内容和体验搬到本地。通过这么做，我们可以将逻辑
-							与UI渲染部分统一，以减少开发和维护成本，这种方式开发APP称之为<em>Hybrid app</em>。我们用的AppCan
-							、phoneGap和Cordova。这些框架一般都会放出相机、地理位置定位等调用硬件的接口
-							</span>
-						</p>
-					</section>
-
-					<section>
-						<h2> web 流产生的问题</h2>
-						<p>1 性能慢</p>
-						<p> 2 功能缺失</p>
-					</section>
-
-					<section>
-						<h2>②<em><代码 /></em>   转换流</h2>
-
-						<p class="fragment">将某个语言转成Object-C Javascript 或 C#，然后使用不同平台下地官方工具来开发。</p>
-						<ol>
-							<li>Object-C 	=> Java</li>
-
-							<li>java 		=>Object-C</li>
-							<li>Java 		=> C#</li>
-							<li>hexe 		=>其他语言</li>
-						</ol>
-
-					</section>
-					<section>
-						<h2>③编译流</h2>
-
-						<p>
-							将某个语言编译成二进制文件，生成动态库，或者打包成apk/ipa/xap 文件
-						</p>
-						<ul>
+					<p class="fragment">将某个语言转成Object-C Javascript 或 C#，然后使用不同平台下地官方工具来开发。</p>
+					<ol>
+						<li>Object-C => Java</li>
+						<li>java =>Object-C</li>
+						<li>Java => C#</li>
+						<li>hexe =>其他语言</li>
+					</ol>
+				</section>
+				<section>
+					<h2>③编译流</h2>
+					<p>
+						将某个语言编译成二进制文件，生成动态库，或者打包成apk/ipa/xap 文件
+					</p>
+					<ul>
 						<li>优点 :重用显示复杂的代码 反编译困难 性能或许会更好</li>
 						<li>缺点 :对bug 和 性能问题，定位和修改成本很高 编译后体积不小，尤其是支持Armv8 和x86的话</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>④虚拟机流</h2>
-						<p>通过将某个语言的虚拟机移植到不同的平台
-						</p>
-						<ul>
-							<li>性能损耗</li>
-							<li>虚拟机占用空间</li>
-						</ul>
-					</section>
-				</section>
-
-
-				<section>
-					<section>
-						<h1>快速入门</h1>
-					</section>
-
-					<section>
-						<h2>前期准备</h2>
-						<ol>
-							<li class="fragment">OS X – 现在这个仓库只包含 iOS 实现，且<em>Xcode</em> 只能在 Mac 上运行</li>
-							<li class="fragment">安装 node，watchman，flow 的推荐方法是 Homebrew</li>
-							<li class="fragment">brew install <strong>node</strong></li>
-							<li class="fragment">brew install --HEAD <strong>watchman</strong></li>
-							<li class="fragment">brew install <strong>flow</strong></li>
-						</ol>
-					</section>
-
-					<section>
-						<h2>开始</h2>
-						<ul class="fragment">
-							<li>npm install -g <strong>react-native-cli</strong></li>
-							<li>react-native init AwesomeProject</li>
-						</ul>
-						<ul>
-							<li class="fragment">打开 AwesomeProject.xcodeproj，点击 Xcode 中的运行</li>
-							<li class="fragment">打开你选择的文本编辑器中的 index.ios.js，并且对一些行进行编辑</li>
-							<li class="fragment">在你的 iOS 模拟器中点击 <strong>cmd + R</strong>，看看有什么变化</li>
-						</ul>
-
-					</section>
-				</section>
-
-
-				<section>
-					<h2>what was that?</h2>
-				</section>
-
-				<section data-transition="zoom-in">
-					<h2>Every thing on screen was <strong>native</strong> </h2>
-				</section>
-
-				<section data-transition="fade-out" data-transition-speed="slow">
-					<h2>No <strong>HTML</strong></h2>
-				</section>
-
-				<section data-transition="fade-out" data-transition-speed="fast">
-					<h2>No <strong>Browser</strong></h2>
-				</section>
-
-				<section data-transition="fade-out" data-transition-speed="slow">
-					<h2>No <strong>WebView</strong></h2>
-				</section>
-
-				<section data-transition="zoom">
-					<h2>Completely powered by  <strong>Javascript </strong></h2>
-				</section>
-
-				<section data-transition="none">
-					<h2>Completely powered by  <strong>Javascript </strong></h2>
-				</section>
-
-				<section>
-					<h3>基于 PhoneGap 使用 JavaScript 和 HTML5 开发 iOS 应用已经有好几年了，那 React Native 有什么牛的？</h3>
-				</section>
-				<section>
-					<h3><code>VS</code> <strong>原生</strong></h3>
-					<ul>
-						<li class="fragment">用户体验</li>
-						<li class="fragment">工程开发</li>
-						<li class="fragment">App store 审核抗拒风险</li>
-						<li class="fragment">Android版本时间推迟</li>
-					</ul>
-				</section>
-				<section>
-					<h3><code>VS</code> <strong>phoneGap 和 Titanium</strong></h3>
-					<ul>
-						<li class="fragment">NO html NO WebView NO browser </li>
-						<li class="fragment">React Native 要解决的是开发效率问题，
-							它并没指望完全取代 Native 开发，它的 rootView 继承自 UIView，
-							所以可以在部分 View 是使用，很方便混着，不需要重写整个 app，
-							而且混用的时候还需要显示地将 API 暴露给 JavaScript。</li>
-						<li class="fragment">PhoneGap Titanium 那样企图完全使用 JavaScript 开发，将所有系统 API 都暴露给了 JavaScript，
-							让 JavaScript 语言默认就拥有 Native 语言的各种能力，然后再次基础上来开发</li>
-					</ul>
-				</section>
-
-
-				<section>
-					<h3><code>核心优势</code></h3>
-					<ul>
-						<li class="fragment">上手快，效率高，learn once，write anywhere.</li>
-						<li class="fragment">React native 完全不用DOM， 最后呈现的是原生的效果。（No css 引起的reflow ,repaint）.</li>
-						<li class="fragment">App实时更新，升级简单</li>
-						<li class="fragment">使用CSS FLexbox 对Native View 进行布局（我们有很熟悉的布局，有很多熟悉的样式，
-							当时不用担心泛滥的css style reflow）</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2 class="fragment highlight-green">More</h2>
-					<ul>
-						<li class="fragment">基于web技术，我们可以像在浏览器里那样，随时在仿真程序中查看应用的运行情况，刷新一下即可，无需编译</li>
+					<h2>④虚拟机流</h2>
 
-						<li class="fragment">webComponent</li>
-						<li class="fragment">
-							当你创建一些函数或对象时，用到一些类似的技术。其中一项技术就是单一功能原则，指的是，理想状态下一个组件应该只做一件事，假如它功能逐渐变大就需要被拆分成更小的子组件。
-						</li>
+					<p>通过将某个语言的虚拟机移植到不同的平台
+					</p>
+					<ul>
+						<li>性能损耗</li>
+						<li>虚拟机占用空间</li>
 					</ul>
 				</section>
+			</section>
+			<section>
+				<a href="#" class="navigate-down">
+					<img data-src="test/img/compare-react-native-h5-hybrid.jpg" alt="Down arrow">
+				</a>
+			</section>
 
+			<section>
+				<a href="#" class="navigate-down">
+					<img data-src="test/img/react-native-h5-hybrid-2.jpg" alt="Down arrow">
+				</a>
+			</section>
+
+			<section>
+				<section>
+					<h1>快速入门</h1>
+				</section>
 
 				<section>
-					<h2 class="fragment highlight-green">And </h2>
-					<ul>
-						<li class="fragment">
-							作为前端开发，多掌握一些新技术，特别是大公司相对成熟的技术准会没错的。
-						</li>
-
-						<li class="fragment">
-							作为非前端开发，面对如此强大，有一统江湖趋势的Javascript，开始学习React总是会有益的。
-						</li>
-						<li class="fragment">
-							作为创业公司，前期需要做跨平台，迅速迭代的产品，React Native是值得去尝试的。
-						</li>
-
-					</ul>
+					<h2>前期准备</h2>
+					<ol>
+						<li class="fragment">OS X – 现在这个仓库只包含 iOS 实现，且<em>Xcode</em> 只能在 Mac 上运行</li>
+						<li class="fragment">安装 node，watchman，flow 的推荐方法是 Homebrew</li>
+						<li class="fragment">brew install <strong>node</strong></li>
+						<li class="fragment">brew install --HEAD <strong>watchman</strong></li>
+						<li class="fragment">brew install <strong>flow</strong></li>
+					</ol>
 				</section>
 
+				<section>
+					<h2>开始</h2>
+					<ul class="fragment">
+						<li>npm install -g <strong>react-native-cli</strong></li>
+						<li>react-native init AwesomeProject</li>
+					</ul>
+					<ul>
+						<li class="fragment">打开 AwesomeProject.xcodeproj，点击 Xcode 中的运行</li>
+						<li class="fragment">打开你选择的文本编辑器中的 index.ios.js，并且对一些行进行编辑</li>
+						<li class="fragment">在你的 iOS 模拟器中点击 <strong>cmd + R</strong>，看看有什么变化</li>
+					</ul>
 
+				</section>
+			</section>
+
+
+			<section>
+				<h2>what was that?</h2>
+			</section>
+
+			<section data-transition="zoom-in">
+				<h2>Every thing on screen was <strong>native</strong></h2>
+			</section>
+
+			<section data-transition="fade-out" data-transition-speed="slow">
+				<h2>No <strong>HTML</strong></h2>
+			</section>
+
+			<section data-transition="fade-out" data-transition-speed="fast">
+				<h2>No <strong>Browser</strong></h2>
+			</section>
+
+			<section data-transition="fade-out" data-transition-speed="slow">
+				<h2>No <strong>WebView</strong></h2>
+			</section>
+
+			<section data-transition="zoom">
+				<h2>Completely powered by <strong>Javascript </strong></h2>
+			</section>
+
+			<section data-transition="none">
+				<h2>Completely powered by <strong>Javascript </strong></h2>
+			</section>
+
+			<section>
+				<h3>基于 PhoneGap 使用 JavaScript 和 HTML5 开发 iOS 应用已经有好几年了，那 React Native 有什么牛的？</h3>
+			</section>
+			<section>
+				<h3><code>VS</code> <strong>原生</strong></h3>
+				<ul>
+					<li class="fragment">用户体验</li>
+					<li class="fragment">工程开发</li>
+					<li class="fragment">App store 审核抗拒风险</li>
+					<li class="fragment">Android版本时间推迟</li>
+				</ul>
+			</section>
+			<section>
+				<h3><code>VS</code> <strong>phoneGap 和 Titanium</strong></h3>
+				<ul>
+					<li class="fragment">NO html NO WebView NO browser</li>
+					<li class="fragment">React Native 要解决的是开发效率问题，
+						它并没指望完全取代 Native 开发，它的 rootView 继承自 UIView，
+						所以可以在部分 View 是使用，很方便混着，不需要重写整个 app，
+						而且混用的时候还需要显示地将 API 暴露给 JavaScript。
+					</li>
+					<li class="fragment">PhoneGap Titanium 那样企图完全使用 JavaScript 开发，将所有系统 API 都暴露给了 JavaScript，
+						让 JavaScript 语言默认就拥有 Native 语言的各种能力，然后再次基础上来开发
+					</li>
+				</ul>
+			</section>
+
+
+			<section>
+				<h3><code>核心优势</code></h3>
+				<ul>
+					<li class="fragment">上手快，效率高，learn once，write anywhere.</li>
+					<li class="fragment">React native 完全不用DOM， 最后呈现的是原生的效果。（No css 引起的reflow ,repaint）.</li>
+					<li class="fragment">App实时更新，升级简单</li>
+					<li class="fragment">使用CSS FLexbox 对Native View 进行布局（我们有很熟悉的布局，有很多熟悉的样式，
+						当时不用担心泛滥的css style reflow）
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="fragment highlight-green">More</h2>
+				<ul>
+					<li class="fragment">基于web技术，我们可以像在浏览器里那样，随时在仿真程序中查看应用的运行情况，刷新一下即可，无需编译</li>
+
+					<li class="fragment">webComponent</li>
+					<li class="fragment">
+						当你创建一些函数或对象时，用到一些类似的技术。其中一项技术就是单一功能原则，指的是，理想状态下一个组件应该只做一件事，假如它功能逐渐变大就需要被拆分成更小的子组件。
+					</li>
+				</ul>
+			</section>
+
+
+			<section>
+				<h2 class="fragment highlight-green">And </h2>
+				<ul>
+					<li class="fragment">
+						作为前端开发，多掌握一些新技术，特别是大公司相对成熟的技术准会没错的。
+					</li>
+
+					<li class="fragment">
+						作为非前端开发，面对如此强大，有一统江湖趋势的Javascript，开始学习React总是会有益的。
+					</li>
+					<li class="fragment">
+						作为创业公司，前期需要做跨平台，迅速迭代的产品，React Native是值得去尝试的。
+					</li>
+
+				</ul>
+			</section>
+
+
+			<section>
 				<section>
 					<h2>code view</h2>
 				</section>
-
-
-
-
+				<section>
+					<img data-src="test/img/public.jpg" >
+				</section>
 
 				<section>
-					<h2>Q&A</h2>
-					<p><small>- EOF -</small></p>
+					<img data-src="test/img/weibo.jpg" >
 				</section>
+			</section>
 
-				<section data-transition="zoom">
-					<h2><strong>THANKS</strong></h2>
-				</section>
 
-				<section data-transition="zoom">
-					<h2>THANKS</h2>
-				</section>
-				<!--/============================  ==================================-->
+			<section>
+				<h2>Q&A</h2>
 
-			</div>
+				<p>
+					<small>- EOF -</small>
+				</p>
+			</section>
+
+			<section data-transition="zoom">
+				<h2><strong>THANKS</strong></h2>
+			</section>
+			<!--/============================  ==================================-->
+
 		</div>
+	</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
