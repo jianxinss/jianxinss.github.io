@@ -37,6 +37,7 @@
 
 	<body>
 
+
 	<div class="reveal">
 
 		<!-- Any section element inside of this container is displayed as a slide -->
@@ -48,15 +49,12 @@
 			</section>
 
 			<section data-transition="zoom">
-				<h3>Write once </h3>
 
-				<h3>Run anywhere</h3>
+				<h2>一次编码    处处运行</h2>
+				<aside class="notes">
 
-				<h2>一次编码， 处处运行</h2>
-				<aside class="notes">一次编码，处处运行永远是程序员们的乌托邦，二十年前，Java高举大旗登场，击败了众多竞争对手。时至今日，事实已经证明Java笨重的体型和缓慢的法阵
+					一次编码，处处运行永远是程序员们的乌托邦，二十年前，Java高举大旗登场，击败了众多竞争对手。时至今日，事实已经证明Java笨重的体型和缓慢的法阵
 					已经很难在抓住这个移动互联网的时代。
-					在新的移动浪潮时代,一个应用想要取胜，完美的用户体验是必不可少的。在用户体验上 相比web来讲native完胜。但是我们必须针对于各种不同的平台进行开发。
-					这是工程师们几年来一直存在的强需求。
 
 				</aside>
 			</section>
@@ -67,6 +65,14 @@
 					<li class="fragment highlight-red"><em>&nbsp;&nbsp;X&nbsp;&nbsp;</em>针对不同的平台</li>
 					<li class="fragment highlight-red"><em>&nbsp;&nbsp;X&nbsp;&nbsp;</em>后期维护任务</li>
 				</ul>
+
+				<aside class="notes">
+
+					在新的移动浪潮时代,一个应用想要取胜，完美的用户体验是必不可少的。在用户体验上 相比web来讲native完胜。
+					但是我们必须针对于各种不同的平台进行开发。
+					这是工程师们几年来一直存在的强需求。
+
+				</aside>
 			</section>
 
 
@@ -86,86 +92,13 @@
 				<p>
 					<small>Created by <a href="">赵建鑫</a> / <a>@James</a></small>
 				</p>
-			</section>
 
-			<section data-transition="slide">
-				<section><h1>what</h1></section>
-				<section>
-					<p>
-						React Native enables you to build world-class application experiences on native platforms using a
-						consistent developer experience based on JavaScript and React.
-						The focus of React Native is on developer efficiency across all the platforms you care about —
-						learn once, write anywhere. Facebook uses React Native in multiple production apps and will continue
-						investing in React Native.
-					</p>
-				</section>
-				<section data-transition="convex">
-					<ol>
-						<li class="">React Native可以让开发者在基于Javascript和React的开发经验基础之上开发一款与原生体验一致的应用。</li>
-						<li class="fragment">React Native核心放在解决的开发效率问题。<strong>learn once, write anywhere</strong></li>
-						<li class="fragment">Facebook 将会利用React Native开发他们的应用，并继续投资于React Native。</li>
-					</ol>
-
-				</section>
-			</section>
-			<section data-transition="slide">
-				<section>
-					What we really want is the user experience of the native mobile platforms, combined with the developer
-					experience we have when building with React on the web.
-				</section>
-				<section>
-					With a bit of work, we can make it so the exact same React that's on GitHub can power truly native
-					mobile applications. The only difference in the mobile environment is that instead of running React in
-					the browser and rendering to divs and spans, we run it an embedded instance of JavaScriptCore inside our
-					apps and render to higher-level platform-specific components.
-				</section>
-				<section>
-					It's worth noting that we're not chasing <strong class="fragment highlight-red">“write once, run
-					anywhere.”</strong>
-				</section>
-
-				<section>
-					Different platforms have different looks, feels, and capabilities
-				</section>
-
-				<section>
-					and as such, we should still be developing discrete apps for each platform, but the same set of
-					engineers should be able to build applications for whatever platform they choose, without needing to
-					learn a fundamentally different set of technologies for each.
-				</section>
-				<section>
-					We call this approach
-					<blockquote>
-						<strong class="fragment highlight-green">“learn once, write anywhere.”</strong>
-					</blockquote>
-				</section>
-
-				<blockquote>
-
-				</blockquote>
-
-			</section>
-			<section>
-				<h2>举个例子</h2>
-			</section>
-			<section>
-				<a href="#" class="navigate-down">
-					<img data-src="test/img/index.jpg" alt="Down arrow">
-				</a>
-				<a href="#" class="navigate-down">
-					<img data-src="test/img/me.jpg" alt="Down arrow">
-				</a>
-			</section>
-			<section>
-				<section><h2>架构图</h2></section>
-				<section>
-					<h2></h2>
-					<img data-src="test/img/React-native-module.png" alt="" width="800" height="600">
-				</section>
+				<aside class="notes">
+					React, 是Facebook and Instagram 出的一款开源JS框架 , 它采取了一种不同的方式开发 JavaScript apps. 5月份在JSConf 大会上介绍的时候,在整个前端届引起了不小的轰动，所以大家对跨平台开发这个话题的讨论再次火热起来。
+				</aside>
 			</section>
 
 
-			</section>
 
 			<section>
 				<section id="fragments2">
@@ -176,6 +109,12 @@
 						<li class="fragment">编译流</li>
 						<li class="fragment">虚拟机流</li>
 					</ol>
+					<aside class="notes">
+
+
+						曾经大家以为在手机上可以像桌面那样通过 Web 技术来实现跨平台开发，却大多因为性能或功能问题而放弃，不得不针对不同平台开发多个版本。
+						但这并没有阻止人们对跨平台开发技术的探索，毕竟谁不想降低开发成本，维护成本，一次编写就处处运行呢
+					</aside>
 				</section>
 
 				<section>
@@ -197,32 +136,47 @@
 						、phoneGap和Cordova。这些框架一般都会放出相机、地理位置定位等调用硬件的接口
 						</span>
 					</p>
+					<aside class="notes">
+
+						现在说到 Web 性能(内嵌 html)差主要说的是 Android下比较差，在 iOS 下已经很流畅了，在 Android 4 之前的 WebView 甚至都没有实现 GPU 加速，
+						每次重绘整个页面，有动画的时候不卡才怪。
+
+						性能值得是 单纯从webView 层是没法去调用或者说没法很好的去调用 系统的一些组件或者硬件设备。
+					</aside>
 				</section>
 
 				<section>
 					<h2> web 流产生的问题</h2>
-
 					<p>1 性能慢</p>
+					<p>2 功能缺失</p>
+					<aside class="notes">
 
-					<p> 2 功能缺失</p>
+						前面提到写 Native 代码是必须的，但不同平台下的官方语言不一样，
+						这会导致同样的逻辑要写两次以上，于是就有人想到了通过代码转换的方式来减少工作量，比如将 Java 转成 Objective-C。
+					</aside>
 				</section>
 
 				<section>
 					<h2>②<em>
-						<代码/>
+						< 代码 / >
+
 					</em> 转换流
 					</h2>
 
 					<p class="fragment">将某个语言转成Object-C Javascript 或 C#，然后使用不同平台下地官方工具来开发。</p>
 					<ol>
-						<li>Object-C => Java</li>
-						<li>java =>Object-C</li>
-						<li>Java => C#</li>
-						<li>hexe =>其他语言</li>
+						<li>Object-C => Java  	<strong>j2objc</strong></li>
+						<li>java =>Object-C  	<strong>MyAppConverter</strong></li>
+						<li>Java => C# 			<strong>Sharpen</strong></li>
+						<li>hexe =>其他语言 		<strong></strong></li>
 					</ol>
+
+
 				</section>
+
 				<section>
 					<h2>③编译流</h2>
+
 					<p>
 						将某个语言编译成二进制文件，生成动态库，或者打包成apk/ipa/xap 文件
 					</p>
@@ -243,25 +197,143 @@
 					</ul>
 				</section>
 			</section>
+
+
+			<section data-transition="slide">
+				<section><h1>什么是 <strong>React Native</strong> </h1>
+					<aside class="notes">
+						前面讲完了目前跨平台的几种实现方案，总体来看有利有弊。
+						不少公司目前都采取灵活性相当高的hybrid 开发方式。
+
+						下面我们来看一下React Naive 这个新生框架，先了解一下框架的理念，只有在思想理念上赞同它，你才可能有欲望深入了解它，学习它使用它
+					</aside>
+				</section>
+
+				<section>
+					<p>
+						React Native enables you to build world-class application experiences on native platforms using a
+						consistent developer experience based on JavaScript and React.
+						The focus of React Native is on developer efficiency across all the platforms you care about —
+						learn once, write anywhere. Facebook uses React Native in multiple production apps and will continue
+						investing in React Native.
+					</p>
+				</section>
+				<section data-transition="convex">
+					<ol>
+						<li class="">React Native可以让开发者在基于Javascript和React的开发经验基础之上开发一款与原生体验一致的应用。</li>
+						<li class="fragment">React Native核心放在解决的开发效率问题。<strong>learn once, write anywhere</strong></li>
+						<li class="fragment">Facebook 将会利用React Native开发他们的应用，并继续投资于React Native。</li>
+					</ol>
+
+				</section>
+			</section>
+			<section data-transition="slide">
+				<section>
+					<p>What we really want is the user experience of the native mobile platforms, combined with the developer
+						experience we have when building with React on the web.</p>
+
+					<span class="fragment">我们的目标是：<em>即拥有 <code>native</code> 的用户体验，又要保留 <code>React</code> 的开发效率</em></span>
+
+				</section>
+				<section>
+					<p>
+						With a bit of work, we can make it so the exact same React that's on GitHub can power truly native
+						mobile applications. The only difference in the mobile environment is that instead of running React in
+						the browser and rendering to divs and spans, we run it an embedded instance of JavaScriptCore inside our
+						apps and render to higher-level platform-specific components.
+					</p>
+
+
+					<span class="fragment"><em><code>React Native</code>之前有个<strong>ReactJS</strong>，<strong>ReactJS</strong> 是驱动 web端，<code>React Native</code>是驱动渲染平台的特定组件</em></span>
+					<aside class="notes">
+						它由Facebook创建，并在2013年首次发布。Facebook认为React在处理SPA问题上可以成为Angular的替代品，reactJS专注于UI层，Angular 是MVVM 框架
+						总的来说React 是更高效、具有更高性能、速度更快的类库。React Native 是将React从Web端搬到了移动平台。
+					</aside>
+
+				</section>
+				<section>
+					It's worth noting that we're not chasing <strong class="fragment highlight-red">“write once, run
+					anywhere.”</strong>
+				</section>
+
+				<section>
+					<p>Different platforms have different looks, feels, and capabilities</p>
+					<p>
+						不同的平台具有不容的外观，感觉，性能。
+					</p>
+
+				</section>
+
+				<section>
+					<p> and as such, we should still be developing discrete apps for each platform, but the same set of
+						engineers should be able to build applications for whatever platform they choose, without needing to
+						learn a fundamentally different set of technologies for each.</p>
+
+					<p class="fragment"> 所以我们仍然需要针对不同的平台开发不同的App，但是对于同一组的工程师来说，他们应该有那种可以开发应用的能力，
+						无论选择什么平台！而且不需要因为为某个平台开发而去学习那个平台的技术。</p>
+				</section>
+				<section>
+					We call this approach
+					<blockquote>
+						<strong class="fragment highlight-green">“learn once, write anywhere.”</strong>
+					</blockquote>
+					<aside class="notes">
+						React提出重新思考UI开发过程，其实不是面向浏览器，而是所有的前端，因为对前端开发而言我们需要涉及的领域已经开始包括了Web与Native。
+					</aside>
+				</section>
+			</section>
 			<section>
-				<a href="#" class="navigate-down">
-					<img data-src="test/img/compare-react-native-h5-hybrid.jpg" alt="Down arrow">
-				</a>
+				<section><h2>架构图</h2></section>
+				<section>
+					<h2></h2>
+					<img data-src="test/img/React-native-module.png" alt="" width="800" height="600">
+					<aside class="notes">
+						1. React：不同平台上编写基于React的代码。
+						2. Virtual DOM：相对Browser环境下的DOM（文档对象模型）而言，Virtual DOM是DOM在内存中的一种轻量级表达方式（原话是lightweight representation of the document），
+						可以通过不同的渲染引擎生成不同平台下的UI，JS和Native之间通过Bridge通信
+						3. Web/iOS/Android：已实现了Web和iOS平台，Android平台预计将于2015年10月实现。
+					</aside>
+
+
+				</section>
 			</section>
 
 			<section>
+				<h2>实例</h2>
+			</section>
+			<section>
 				<a href="#" class="navigate-down">
-					<img data-src="test/img/react-native-h5-hybrid-2.jpg" alt="Down arrow">
+					<img data-src="test/img/index.jpg" alt="Down arrow">
 				</a>
+				<a href="#" class="navigate-down">
+					<img data-src="test/img/me.jpg" alt="Down arrow">
+				</a>
+				<aside class="notes">
+					这是我上个月刚接触React  Native时候所做的几个App界面。
+				</aside>
+			</section>
+
+			<section>
+				<section>
+					<img data-src="test/img/public.jpg">
+				</section>
+
+				<section>
+					<img data-src="test/img/weibo.jpg">
+				</section>
 			</section>
 
 			<section>
 				<section>
 					<h1>快速入门</h1>
+					<aside class="notes">
+						React Native 的关键就是，以把 React 编程模式的能力带到移动开发来作为主要目标。它的目标不是跨平台一次编写到处执行，而是一次学习跨平台开发。这个是一个非常大的区别。这篇教程只介绍 iOS 平台，
+						不过你一旦掌握了相关的概念，就可以应用到 Android 平台，快速构建 Android 应用。
+					</aside>
 				</section>
 
 				<section>
-					<h2>前期准备</h2>
+					<h2>准备工作</h2>
 					<ol>
 						<li class="fragment">OS X – 现在这个仓库只包含 iOS 实现，且<em>Xcode</em> 只能在 Mac 上运行</li>
 						<li class="fragment">安装 node，watchman，flow 的推荐方法是 Homebrew</li>
@@ -282,13 +354,15 @@
 						<li class="fragment">打开你选择的文本编辑器中的 index.ios.js，并且对一些行进行编辑</li>
 						<li class="fragment">在你的 iOS 模拟器中点击 <strong>cmd + R</strong>，看看有什么变化</li>
 					</ul>
-
 				</section>
+			</section>
+			<section>
+				<h2>code view</h2>
 			</section>
 
 
 			<section>
-				<h2>what was that?</h2>
+				<h2>?</h2>
 			</section>
 
 			<section data-transition="zoom-in">
@@ -311,9 +385,6 @@
 				<h2>Completely powered by <strong>Javascript </strong></h2>
 			</section>
 
-			<section data-transition="none">
-				<h2>Completely powered by <strong>Javascript </strong></h2>
-			</section>
 
 			<section>
 				<h3>基于 PhoneGap 使用 JavaScript 和 HTML5 开发 iOS 应用已经有好几年了，那 React Native 有什么牛的？</h3>
@@ -326,6 +397,16 @@
 					<li class="fragment">App store 审核抗拒风险</li>
 					<li class="fragment">Android版本时间推迟</li>
 				</ul>
+
+				<aside class="notes">
+
+					用户体验 ： 几乎一致。
+					工程开发 ： 基于Javascript  刷新debug
+
+					React Native 的官方视频中说它能做到 App 内实时更新，其实这是 Apple 明文禁止。要做得低调。
+
+					但是Apple 居然在 iOS 8.2 中改条款了，可以下载执行 JavaScript，而且 UIKit 的作者都觉得 React Native 很赞
+				</aside>
 			</section>
 			<section>
 				<h3><code>VS</code> <strong>phoneGap 和 Titanium</strong></h3>
@@ -368,6 +449,21 @@
 			</section>
 
 
+
+
+			<section>
+				<a href="#" class="navigate-down">
+					<img data-src="test/img/compare-react-native-h5-hybrid.jpg" alt="Down arrow">
+				</a>
+
+			</section>
+
+			<section>
+				<a href="#" class="navigate-down">
+					<img data-src="test/img/react-native-h5-hybrid-2.jpg" alt="Down arrow">
+				</a>
+			</section>
+
 			<section>
 				<h2 class="fragment highlight-green">And </h2>
 				<ul>
@@ -383,20 +479,6 @@
 					</li>
 
 				</ul>
-			</section>
-
-
-			<section>
-				<section>
-					<h2>code view</h2>
-				</section>
-				<section>
-					<img data-src="test/img/public.jpg" >
-				</section>
-
-				<section>
-					<img data-src="test/img/weibo.jpg" >
-				</section>
 			</section>
 
 
